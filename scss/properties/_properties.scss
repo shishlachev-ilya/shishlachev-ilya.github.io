@@ -1,0 +1,291 @@
+.properties {
+
+  &-wrap {
+
+    &_detail {
+      margin: 25px 0 0;
+
+      @media ($desctop) {
+        margin: 0;
+      }
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    display: flex;
+    height: 64px;
+    margin: 0 0 6px;
+
+    border: 1px solid $border;
+    border-radius: 5px;
+
+    @media ($desctop) {
+      height: auto;
+    }
+
+    &-code {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      flex-basis: 93px;
+      padding: 3px 0 3px 12px;
+
+      border-radius: 0 0 0 5px;
+      background: #efeff6;
+
+      @media ($desctop) {
+        position: static;
+
+        flex-direction: column;
+        justify-content: center;
+        padding: 8px 0;
+
+        border-radius: 5px 0 0 5px;
+      }
+
+      &__title {
+        @include font(12px, $reg, $main);
+
+        @media ($desctop) {
+          padding: 0 0 5px;
+        }
+      }
+
+      &__number {
+        @include font(14px, $bold, $main);
+      }
+    }
+
+    &-weight {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 120px;
+      height: 41px;
+      background: url("../img/svg/backgrounds/basket-arrow.svg") no-repeat center right;
+      background-size: 18px 52px;
+
+      @media ($desctop) {
+        flex-basis: 140px;
+        height: auto;
+      }
+
+      &__item {
+        @include font(18px, $bold, $main);
+      }
+    }
+
+    &-price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      height: 41px;
+      padding: 0 85px 0 0;
+
+      @media ($desctop) {
+        height: auto;
+      }
+
+      &__old {
+        @include font(14px, $bold, $dark);
+        text-decoration: line-through;
+      }
+
+      &__new {
+        @include font(18px, $bold, $orange);
+        
+        &_black {
+          color: $dark;
+        }
+      }
+    }
+
+    &-basket {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      height: 100%;
+
+      &_catalog {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-info {
+    padding: 0 0 18px;
+
+    &:last-child {
+      margin: 0;
+
+      @media ($desctop) {
+        margin: 0 0 100px;
+      }
+    }
+
+    &_recall {
+      display: none;
+
+      @media ($desctop) {
+        display: block;
+      }
+    }
+
+    &-head {
+      display: flex;
+      justify-content: center;
+      padding: 24px 0 10px;
+
+      border-bottom: 1px solid $border;
+
+      &__title {
+        margin: 0;
+
+        @include font(18px, $bold, $main);
+      }
+    }
+
+    &-content {
+      position: relative;
+      max-height: 110px;
+
+      overflow: hidden;
+      transition: all .1s;
+
+      @media ($desctop) {
+        max-height: 195px;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 30px;
+        background: linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+      }
+
+      &__item {
+        padding: 5px 0;
+
+        @include font(14px, $reg, #424242);
+        text-indent: 35px;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 0;
+
+      &__seemore {
+        @include font(14px, $reg, $main);
+        cursor: pointer;
+        text-decoration: underline;
+        user-select: none;
+      }
+    }
+
+    &-table {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0 0;
+
+      &_bs {
+        margin: 13px 0 5px;
+      }
+
+      &__item {
+        display: flex;
+        align-items: flex-start;
+        flex-basis: 50%;
+        padding: 8px 15px;
+
+        @include font(14px, $reg, $main);
+        line-height: 16px;
+
+        border: 1px solid $border;
+
+        &_bs {
+          padding: 4px;
+
+          @include font(14px, $bold, $main);
+          line-height: 23px;
+          border: none;
+
+          &:nth-child(odd) {
+            flex-basis: 45%;
+            padding: 3px 5px;
+          }
+
+          &:nth-child(even) {
+            flex-basis: 55%;
+            padding: 3px 0 3px 4px;
+          }
+        }
+
+        &_orange {
+          @include font(18px, $bold, $orange);
+        }
+
+        &_bg {
+          background: #f4f4f8;
+        }
+
+        &:nth-child(odd) {
+          justify-content: flex-end;
+          margin: -1px 0 0 -1px;
+          font-weight: $bold;
+        }
+
+        &:nth-child(even) {
+          margin: -1px -1px 0 -1px;
+        }
+      }
+    }
+  }
+}
+
+.is-open {
+  max-height: 1000px;
+  transition: all .1s;
+
+  &:after {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

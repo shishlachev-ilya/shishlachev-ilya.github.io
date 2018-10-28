@@ -1,0 +1,30 @@
+.header-section {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  margin: 0;
+
+  &_info {
+    margin: 0;
+    justify-content: center;
+    line-height: 22px;
+
+    @media ($desctop) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    @include font(20px, $bold, $dark);
+
+    @media ($desctop) {
+      @include font(30px, $bold, $dark);
+    }
+
+    &_info {
+      color: $main;
+    }
+  }
+}

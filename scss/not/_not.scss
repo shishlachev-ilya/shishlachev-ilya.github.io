@@ -1,0 +1,39 @@
+.not {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 403px);
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__head {
+      margin: 0 0 25px;
+
+      @include font(48px, $bold, $orange);
+    }
+
+    &__text {
+      margin: 0 0 25px;
+
+      @include font(26px, $bold, $main);
+    }
+
+    &__link {
+      display: inline-block;
+      width: 160px;
+      height: 35px;
+
+      @include font(16px, $bold, $orange);
+      line-height: 29px;
+      text-align: center;
+
+      border: 1px solid $orange;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+  }
+}

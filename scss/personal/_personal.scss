@@ -1,0 +1,203 @@
+.personal {
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 50px;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+
+    @media ($desctop) {
+      flex-direction: row;
+      min-height: 900px;
+      max-width: 100%;
+    }
+
+    &-border {
+      height: 100%;
+
+      @media ($desctop) {
+        border-top: 1px solid $border;
+      }
+    }
+  }
+
+  &__col {
+    flex-basis: 33.33%;
+
+    &:first-of-type {
+
+      .personal-wrap-border {
+
+        @media ($desctop) {
+          border-right: 1px solid $border;
+          border-left: 1px solid $border;
+        }
+      }
+    }
+
+    &:not(:first-of-type) {
+
+      .personal-wrap-border {
+
+        @media ($desctop) {
+          border-right: 1px solid $border;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      order: 3;
+      padding: 15px 0 0;
+
+      @media ($desctop) {
+        padding: 0;
+        order: inherit;
+      }
+    }
+
+    &:nth-child(2) {
+      order: 2;
+      padding: 15px 0 0;
+
+      @media ($desctop) {
+        padding: 0;
+        order: inherit;
+      }
+    }
+
+    &:nth-child(3) {
+      order: 1;
+
+      @media ($desctop) {
+        order: inherit;
+      }
+    }
+  }
+
+  &-order {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 0;
+    border-bottom: 1px solid $border;
+
+    &:first-child {
+      border-top: 1px solid $border;
+
+      @media ($desctop) {
+        border-top: none;
+      }
+    }
+
+
+    &-item {
+      flex-basis: 50%;
+      padding: 0 0 15px 25px;
+
+      @media ($desctop) {
+        padding: 0 0 15px 45px;
+      }
+
+      &__head {
+        display: flex;
+        padding: 0 0 5px;
+
+        @include font(14px, $reg, #919191);
+      }
+
+      &__text {
+        display: flex;
+
+        @include font(16px, $bold, $main);
+
+        &_status {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  &-sale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+
+    border: 3px solid $orange;
+
+    @media ($desctop) {
+      margin: 15px;
+      padding: 17px 0 12px;
+    }
+
+    &__head {
+      @include font(18px, $bold, $orange);
+
+      @media ($desctop) {
+        @include font(20px, $bold, $orange);
+      }
+    }
+
+    &__rate {
+      padding: 4px 0;
+
+      @include font(30px, $bold, $orange);
+
+      @media ($desctop) {
+        padding: 15px 0;
+        @include font(36px, $bold, $orange);
+      }
+    }
+
+    &__desc {
+      @include font(14px, $reg, #a2a2a2);
+
+      @media ($desctop) {
+        @include font(16px, $reg, #a2a2a2);
+      }
+    }
+  }
+}
+
+.exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &:hover {
+
+      .exit__icon {
+        fill: $orange;
+      }
+
+      .exit__title {
+        color: $orange;
+      }
+    }
+  }
+
+  &__svg-box {
+    width: 22px;
+    height: 22px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $main;
+    }
+  }
+
+  &__title {
+    margin: 0 0 0 10px;
+    @include font(18px, $bold, $main);
+    cursor: pointer;
+  }
+}

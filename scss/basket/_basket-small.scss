@@ -1,0 +1,54 @@
+.basket-small {
+  padding: 23px 10px 13px;
+
+  &__scroll {
+    height: 248px;
+  }
+
+  &-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0;
+    margin: 0 0 10px;
+
+    background: #fff;
+
+    &__row {
+      display: flex;
+    }
+
+    &__col {
+
+      &:first-child {
+        flex-basis: 71px;
+        flex-shrink: 0;
+      }
+
+      &:last-child {
+        flex-grow: 1;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &-order {
+
+    &__link {
+      display: block;
+      padding: 12px 0;
+
+      @include font(16px, $bold, #fff);
+      text-align: center;
+
+      background: $orange;
+      border-radius: 5px;
+      text-decoration: none;
+      
+      &:hover {
+        background: #f17c04;
+      }
+    }
+  }
+}

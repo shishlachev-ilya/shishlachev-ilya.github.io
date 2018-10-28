@@ -1,0 +1,29 @@
+.basket-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 8px;
+  padding: 20px 30px;
+
+  border: 2px dashed $border;
+
+  &_personal {
+    border: none;
+  }
+
+  &__svg-box {
+    width: 50px;
+    height: 50px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #cdcde5;
+    }
+  }
+
+  &__title {
+    padding: 0 0 0 23px;
+    @include font(16px, $bold, #c4c5e1);
+  }
+}

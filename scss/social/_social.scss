@@ -1,0 +1,48 @@
+.social {
+  display: flex;
+  
+  &-link {
+    display: inline-flex;
+    width: 54px;
+    height: 54px;
+    margin: 0 0 0 5px;
+    padding: 8px;
+
+    border: 1px solid $orange;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $orange;
+
+      .social-link__icon_fb {
+        fill: #fff;
+      }
+
+      .social-link__icon_g {
+        fill: #fff !important;
+      }
+    }
+
+    &_g {
+      background-image: url("../img/svg/google.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 36px;
+
+      &:hover {
+        background-image: url("../img/svg/g-white.svg");
+      }
+    }
+
+    &__icon {
+      width: 36px;
+      height: 36px;
+
+      &_fb {
+        fill: #2467b6;
+      }
+
+    }
+  }
+}

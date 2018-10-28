@@ -1,0 +1,10 @@
+@function calculateRem($size) {
+  $remSize: $size / 14px;
+  @return #{$remSize}rem;
+}
+
+@mixin font($size, $ff, $color) {
+  font-size: calculateRem($size);
+  font-family: $ff;
+  color: $color;
+}

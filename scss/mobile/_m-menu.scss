@@ -1,0 +1,105 @@
+.m-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 100;
+
+  transition: all .5s ease;
+
+  display: inline-flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+
+  background-color: $main;
+
+  @media ($desctop) {
+    display: none;
+  }
+
+  &__wrap {
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  &-close {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  &-head {
+    padding: 20px 0 20px 25px;
+    background-color: #51537e;
+
+    &__title {
+      margin: 0;
+
+      @include font(16px, $reg, #fff);
+    }
+  }
+
+  &-list {
+
+    &-item {
+      border-top: 1px solid #9498d8;
+
+      &:last-child {
+        border-bottom: 1px solid #9498d8;
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: 15px 0 15px 25px;
+
+      @include font(16px, $bold, #fff);
+      text-decoration: none;
+
+      background: url("../img/svg/m-arrow.svg") no-repeat center right 15px;
+    }
+  }
+
+  &-info {
+    justify-content: center;
+    padding: 25px 0;
+  }
+
+  .info_header {
+    padding: 0;
+    margin: auto;
+    max-width: 162px;
+  }
+
+}
+
+.m-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: none;
+
+  background: rgba(0,0,0, .6);
+}
+
+.is-open {
+  left: 0;
+}
+
+.fix {
+  overflow: hidden;
+}

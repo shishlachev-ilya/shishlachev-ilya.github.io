@@ -1,0 +1,429 @@
+.header {
+  padding: 0;
+
+  background: $main;
+
+  @media ($desctop) {
+    padding: 10px 0 0;
+  }
+
+  &-wrap {
+    display: none;
+
+    @media ($desctop) {
+      display: flex;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 14px 0 0;
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+
+    &:first-child {
+      justify-content: space-between;
+      padding: 0 37px 0 33px;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+      padding: 0 7px 0;
+    }
+  }
+}
+
+.user-info {
+  position: relative;
+
+  margin: 0 25px 0 0;
+
+  &:hover {
+
+    .drop-menu {
+      display: block;
+    }
+
+    .user-info-link {
+      background-image: url("../img/svg/main-arrow-top.svg");
+    }
+
+    .user-info-link__title {
+      color: $main;
+    }
+  }
+
+  &-link {
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+
+    background-image: url("../img/svg/white-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right 5px;
+    background-size: 13px;
+
+    &__title {
+      padding: 0 29px 0 0;
+      @include font(14px, $bold, #fff);
+    }
+  }
+}
+
+.user-cabinet {
+  
+  &__link {
+    @include font(14px, $bold, #fff);
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.search {
+  position: relative;
+
+  display: block;
+  width: 100%;
+
+  @media ($desctop) {
+    width: auto;
+  }
+
+  &__field {
+    width: 100%;
+    height: 43px;
+    padding: 0 45px 0 17px;
+
+    @include font(16px, $bold, $main);
+
+    border: 3px solid #fff;
+
+    background: #fff;
+    outline: none;
+
+    @media ($desctop) {
+      color: #fff;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(16px, $bold, #adaec8);
+
+      @media($desctop) {
+        color: #fff;
+      }
+    }
+    &::-moz-placeholder {
+      @include font(16px, $bold, #adaec8);
+
+      @media($desctop) {
+        color: #fff;
+      }
+    }
+    &:-ms-input-placeholder {
+      @include font(16px, $bold, #adaec8);
+
+      @media($desctop) {
+        color: #fff;
+      }
+    }
+    &:-moz-placeholder {
+      @include font(16px, $bold, #adaec8);
+
+      @media($desctop) {
+        color: #fff;
+      }
+    }
+
+    @media ($desctop) {
+      width: 247px;
+      height: 51px;
+      background: $main;
+
+      border-radius: 5px;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 6px;
+    transform: translate(-50%, -50%);
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @media ($desctop) {
+      top: 15px;
+      left: auto;
+      right: 17px;
+      transform: translate(0, 0);
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+      fill: $main;
+
+      @media ($desctop) {
+        fill: #fff;
+      }
+
+    }
+  }
+}
+
+.like {
+  margin: 0;
+
+  @media ($desctop) {
+    margin: 0 0 0 3px;
+  }
+
+  &:hover .like-link__icon {
+    fill: $orange;
+  }
+
+  &-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 9px;
+    width: 60px;
+    height: 60px;
+
+    text-decoration: none;
+
+    @media ($desctop) {
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
+
+    &:hover svg {
+      fill: $orange;
+    }
+
+    &__svg-box {
+      width: 27px;
+      height: 27px;
+
+      @media ($desctop) {
+        width: 34px;
+        height: 34px;
+      }
+
+      svg {
+        fill: #fff;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__text {
+      @include font(16px, $bold, #fff);
+
+      @media ($desctop) {
+        margin: 0 0 0 10px;
+
+        @include font(18px, $bold, #fff);
+      }
+    }
+  }
+}
+
+.logo {
+  margin: 0;
+  flex-basis: 100%;
+  height: 60px;
+  padding: 0 15px 0 5px;
+
+  border-right: 1px solid #bfc1d8;
+
+  @media ($desctop) {
+    flex-basis: 285px;
+    margin: -7px 0 0 -7px;
+    padding: 0;
+    height: auto;
+
+    border-right: none;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    font-size: 0;
+    text-decoration: none;
+    outline: none;
+
+    img {
+      width: 100%;
+    }
+
+    &_m {
+      width: 100%;
+      max-width: 179px;
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.drop-menu {
+  position: absolute;
+  top: -10px;
+  left: -13px;
+  z-index: 2;
+
+  display: none;
+
+  min-width: 150px;
+}
+
+.drop-list {
+  padding: 40px 0 10px;
+  background: #fff;
+  border: 2px solid $main;
+  border-radius: 5px;
+
+  &__link {
+    display: block;
+    padding: 5px 0 5px 15px;
+
+    @include font(14px, $bold, $main);
+    text-decoration: none;
+
+    &:hover {
+      background: #ffdeba;
+    }
+  }
+}
+
+.mobile-wrap {
+
+  @media ($desctop) {
+    display: none;
+  }
+
+  &__line {
+    display: flex;
+
+    overflow: hidden;
+  }
+}
+
+.mobile-menu {
+  position: relative;
+
+  width: 60px;
+  height: 43px;
+
+  border-right: 1px solid #bfc1d8;
+  background-color: #fff;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 20px;
+    height: 3px;
+
+    background: $main;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background: $main;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background: $main;
+    }
+  }
+}
+
+.box-m {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 43px;
+
+  background-color: #d8d9e7;
+  border-right: 1px solid #bfc1d8;
+  text-decoration: none;
+
+  svg {
+    fill: $main;
+  }
+
+  &__number {
+    padding: 0 0 0 15px;
+    @include font(14px, $bold, $main);
+
+    @media (max-width: 430px) {
+      display: none;
+    }
+  }
+
+  &_tel {
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding: 0 0 0 15px;
+  }
+
+  &_client {
+    width: 120px;
+    border-right: none;
+
+    svg {
+      transform: rotate(-90deg);
+      stroke: $main;
+      fill: transparent;
+    }
+
+  }
+
+  &__title {
+    margin: 0 5px 0 0;
+
+    @include font(14px, $bold, $main);
+  }
+}

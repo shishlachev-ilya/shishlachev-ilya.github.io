@@ -1,0 +1,17 @@
+.mobile-basket {
+  position: fixed;
+  left: 11px;
+  bottom: 50px;
+  z-index: 98;
+
+  display: block;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+
+  border: 3px solid rgba(241,138,35, .3);
+
+  @media ($desctop) {
+    display: none;
+  }
+}
