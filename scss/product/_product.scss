@@ -421,6 +421,20 @@
       }
     }
   }
+
+  &__not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 178px;
+    margin: 11px 0 6px;
+
+    span {
+      @include font(16px, $bold, #c4c5e1);
+      text-align: center;
+    }
+  }
 }
 
 .zoomOut {

@@ -7,5 +7,9 @@
 
   .header-section {
     justify-content: flex-start;
+
+    &__title {
+      @include font(24px, $bold, $dark);
+    }
   }
 }
