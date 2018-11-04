@@ -1,0 +1,11 @@
+.search-box-title {
+  padding: 0 0 17px;
+
+  @media ($desctop) {
+    padding: 17px 0;
+  }
+
+  .header-section {
+    justify-content: flex-start;
+  }
+}

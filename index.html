@@ -302,15 +302,21 @@
             </div>
 
             <div class="social">
-              <a href="#" class="social-link social-link_g">
-                <!--<img src="img/google.png" alt="google">-->
-                <!--<svg class="social-link__icon social-link__icon_g">-->
-                  <!--<use xlink:href="img/svg/sprite.svg#google"></use>-->
-                <!--</svg>-->
+              <a href="#" class="social-link">
+                <svg
+                  class="svg-g"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M113.47 171.14L95.648 237.672L30.509 239.05C11.042 202.943 0 161.632 0 117.732C0 75.281 10.324 35.249 28.624 0H28.638L86.63 10.632L112.034 68.276C106.717 83.777 103.819 100.417 103.819 117.732C103.821 136.524 107.225 154.529 113.47 171.14Z" transform="translate(0 138.268)" fill="#FBBB00"/>
+                  <path d="M245.899 0C248.839 15.486 250.372 31.479 250.372 47.824C250.372 66.152 248.445 84.03 244.774 101.275C232.312 159.958 199.749 211.2 154.64 247.462L154.626 247.448L81.582 243.721L71.244 179.186C101.176 161.632 124.568 134.161 136.89 101.275H0V0H138.887H245.899Z" transform="translate(261.628 208.176)" fill="#518EF8"/>
+                  <path d="M385.744 146.215L385.758 146.229C341.887 181.492 286.157 202.591 225.491 202.591C128 202.591 43.239 148.1 0 67.91L82.961 0C104.58 57.698 160.239 98.771 225.491 98.771C253.538 98.771 279.814 91.189 302.361 77.953L385.744 146.215Z" transform="translate(30.509 309.409)" fill="#28B446"/>
+                  <path d="M390.78 58.936L307.847 126.832C284.512 112.246 256.928 103.82 227.376 103.82C160.647 103.82 103.947 146.777 83.411 206.544L0.0139999 138.268H0C42.606 56.123 128.436 0 227.376 0C289.491 0 346.444 22.126 390.78 58.936Z" transform="translate(28.624)" fill="#F14336"/>
+                </svg>
               </a>
 
               <a href="#" class="social-link">
-                <!--<img src="img/fb.png" alt="fb">-->
                 <svg class="social-link__icon social-link__icon_fb">
                   <use xlink:href="img/svg/sprite.svg#fb"></use>
                 </svg>
@@ -931,11 +937,24 @@
           </div>
         </div>
 
-        <div class="swiper-button-wrap">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+        <div class="swiper-pagination"></div>
 
+        <div class="swiper-button-wrap">
+          <div class="swiper-button-prev">
+            <svg
+              viewBox="0 0 12 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M11.99 10.106L2.098 19.99L0 18.543L8.556 9.995L0 1.447L2.098 0L11.99 9.884L11.83 9.995L11.99 10.106Z" transform="translate(11.9961 19.9949) rotate(-180)"/>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg
+              viewBox="0 0 12 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M11.99 10.106L2.098 19.99L0 18.543L8.556 9.995L0 1.447L2.098 0L11.99 9.884L11.83 9.995L11.99 10.106Z" transform="translate(0.00610352 0.00488281)" />
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1264,49 +1283,23 @@
 
         <div class="popup-form-social">
           <a href="#" class="popup-form-social-link popup-form-social-link_g">
-            <img src="img/popup-google.png" alt="google">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="30" height="30">
+                <use xlink:href="img/svg/sprite.svg#google"></use>
+              </svg>
+            </div>
             <span class="popup-form-social-link__text">Google</span>
           </a>
 
           <a href="#" class="popup-form-social-link popup-form-social-link_fb">
-            <img src="img/popup-fb.png" alt="fb">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="40" height="40">
+                <use xlink:href="img/svg/sprite.svg#fb"></use>
+              </svg>
+            </div>
             <span class="popup-form-social-link__text">Facebook</span>
           </a>
         </div>
-      </div>
-    </form>
-  </div>
-
-  <div class="popup-close close">
-    <svg class="popup-close__icon">
-      <use xlink:href="img/svg/sprite.svg#close"></use>
-    </svg>
-  </div>
-
-</div>
-
-<div id="callback-popup" class="popup-window">
-  <div class="popup-head">
-    <h6 class="popup-head__title">Вам перезвонить?</h6>
-  </div>
-
-  <div class="popup-content">
-    <form class="popup-form">
-      <div class="popup-form__box">
-        <input type="text" id="name2" class="popup-form__field" required>
-        <label class="popup-form__label" for="name2">Имя</label>
-      </div>
-
-      <div class="popup-form__box">
-        <input type="tel" id="tel" class="popup-form__field" required>
-        <label class="popup-form__label" for="tel">Телефон</label>
-      </div>
-
-      <div class="popup-form__box">
-        <span class="popup-form__desc">График работы call-центра:</span>
-        <span class="popup-form__desc">пн-пт, 10:00 - 20:00</span>
-
-        <button type="submit" class="popup-form__submit">Отправить</button>
       </div>
     </form>
   </div>
@@ -1347,15 +1340,57 @@
 
         <div class="popup-form-social">
           <a href="#" class="popup-form-social-link popup-form-social-link_g">
-            <img src="img/popup-google.png" alt="google">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="30" height="30">
+                <use xlink:href="img/svg/sprite.svg#google"></use>
+              </svg>
+            </div>
             <span class="popup-form-social-link__text">Google</span>
           </a>
 
           <a href="#" class="popup-form-social-link popup-form-social-link_fb">
-            <img src="img/popup-fb.png" alt="fb">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="40" height="40">
+                <use xlink:href="img/svg/sprite.svg#fb"></use>
+              </svg>
+            </div>
             <span class="popup-form-social-link__text">Facebook</span>
           </a>
         </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup-close close">
+    <svg class="popup-close__icon">
+      <use xlink:href="img/svg/sprite.svg#close"></use>
+    </svg>
+  </div>
+
+</div>
+
+<div id="callback-popup" class="popup-window">
+  <div class="popup-head">
+    <h6 class="popup-head__title">Вам перезвонить?</h6>
+  </div>
+
+  <div class="popup-content">
+    <form class="popup-form">
+      <div class="popup-form__box">
+        <input type="text" id="name2" class="popup-form__field" required>
+        <label class="popup-form__label" for="name2">Имя</label>
+      </div>
+
+      <div class="popup-form__box">
+        <input type="tel" id="tel" class="popup-form__field" required>
+        <label class="popup-form__label" for="tel">Телефон</label>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc">График работы call-центра:</span>
+        <span class="popup-form__desc">пн-пт, 10:00 - 20:00</span>
+
+        <button type="submit" class="popup-form__submit">Отправить</button>
       </div>
     </form>
   </div>
@@ -1420,7 +1455,6 @@
   </div>
 
 </div>
-
 
 
 <script

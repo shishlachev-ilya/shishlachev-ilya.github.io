@@ -96,9 +96,13 @@
       align-items: center;
 
       &__title {
-        margin: 0 0 0 30px;
+        margin: 0 0 0 10px;
 
         @include font(26px, $bold, $dark);
+
+        @media ($desctop) {
+          margin: 0 0 0 30px;
+        }
       }
     }
 
@@ -203,6 +207,9 @@
         display: none;
 
         @media ($desctop) {
+          position: relative;
+          z-index: 1;
+
           display: flex;
           flex-basis: 220px;
           flex-shrink: 0;

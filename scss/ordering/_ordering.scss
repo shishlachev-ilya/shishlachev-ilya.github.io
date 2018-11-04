@@ -17,6 +17,7 @@
       @media ($desctop) {
         border-left: 1px solid #6468a1;
         border-right: 1px solid #6468a1;
+        overflow: visible;
       }
     }
 
@@ -383,14 +384,19 @@
 
     & + .radio-box-label {
       position: relative;
+
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding: 20px 20px 19px 55px;
+      padding: 20px 20px 19px 45px;
       min-height: 85px;
 
       border-bottom: 1px solid $border;
       cursor: pointer;
+
+      @media ($desctop) {
+        padding: 20px 20px 19px 55px;
+      }
 
       &_disabled {
         pointer-events: none;
@@ -412,7 +418,7 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: 15px;
+      left: 10px;
       width: 22px;
       height: 22px;
       transform: translateY(-50%);
@@ -420,6 +426,7 @@
       border: 2px solid #cdcdcd;
 
       @media ($desctop) {
+        left: 15px;
         width: 24px;
         height: 24px;
       }
@@ -429,7 +436,7 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: 21px;
+      left: 16px;
       width: 14px;
       height: 14px;
       border-radius: 50%;
@@ -438,6 +445,7 @@
       transform: translateY(-50%);
 
       @media ($desctop) {
+        left: 21px;
         width: 16px;
         height: 16px;
       }
@@ -457,11 +465,11 @@
   }
 
   &-label__head {
+    margin: 0 0 2px;
     @include font(14px, $reg, $dark);
 
     @media ($desctop) {
       margin: 0 0 5px;
-
       @include font(16px, $reg, $dark);
     }
   }
@@ -497,8 +505,6 @@
         top: 3px;
       }
     }
-
-
   }
 
   &__input {
@@ -551,13 +557,18 @@
 }
 
 .help {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+  display: none;
 
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  @media ($desctop) {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
 
   &:hover .help-hint {
     display: flex;

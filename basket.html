@@ -940,12 +940,77 @@
 
         <div class="popup-form-social">
           <a href="#" class="popup-form-social-link popup-form-social-link_g">
-            <img src="img/popup-google.png" alt="google">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="30" height="30">
+                <use xlink:href="img/svg/sprite.svg#google"></use>
+              </svg>
+            </div>
             <span class="popup-form-social-link__text">Google</span>
           </a>
 
           <a href="#" class="popup-form-social-link popup-form-social-link_fb">
-            <img src="img/popup-fb.png" alt="fb">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="40" height="40">
+                <use xlink:href="img/svg/sprite.svg#fb"></use>
+              </svg>
+            </div>
+            <span class="popup-form-social-link__text">Facebook</span>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup-close close">
+    <svg class="popup-close__icon">
+      <use xlink:href="img/svg/sprite.svg#close"></use>
+    </svg>
+  </div>
+
+</div>
+
+<div id="enter" class="popup-window">
+  <div class="popup-head">
+    <h6 class="popup-head__title">Вход</h6>
+  </div>
+
+  <div class="popup-content">
+    <form class="popup-form">
+      <div class="popup-form__box">
+        <input type="text" id="name3" class="popup-form__field error" required>
+        <label class="popup-form__label error" for="name3">Имя</label>
+      </div>
+
+      <div class="popup-form__box">
+        <input type="text" id="password" class="popup-form__field error" required>
+        <label class="popup-form__label error" for="password">Пароль</label>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc popup-form__desc_link">Выслать пароль на e-mail</span>
+
+        <button type="submit" class="popup-form__submit">Вход</button>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc">или</span>
+
+        <div class="popup-form-social">
+          <a href="#" class="popup-form-social-link popup-form-social-link_g">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="30" height="30">
+                <use xlink:href="img/svg/sprite.svg#google"></use>
+              </svg>
+            </div>
+            <span class="popup-form-social-link__text">Google</span>
+          </a>
+
+          <a href="#" class="popup-form-social-link popup-form-social-link_fb">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="40" height="40">
+                <use xlink:href="img/svg/sprite.svg#fb"></use>
+              </svg>
+            </div>
             <span class="popup-form-social-link__text">Facebook</span>
           </a>
         </div>
@@ -1026,55 +1091,6 @@
 
       <div class="popup-form__box">
         <button type="submit" class="popup-form__submit">Использовать</button>
-      </div>
-    </form>
-  </div>
-
-  <div class="popup-close close">
-    <svg class="popup-close__icon">
-      <use xlink:href="img/svg/sprite.svg#close"></use>
-    </svg>
-  </div>
-
-</div>
-
-<div id="enter" class="popup-window">
-  <div class="popup-head">
-    <h6 class="popup-head__title">Вход</h6>
-  </div>
-
-  <div class="popup-content">
-    <form class="popup-form">
-      <div class="popup-form__box">
-        <input type="text" id="name3" class="popup-form__field" required>
-        <label class="popup-form__label" for="name3">Имя</label>
-      </div>
-
-      <div class="popup-form__box">
-        <input type="text" id="password" class="popup-form__field" required>
-        <label class="popup-form__label" for="password">Пароль</label>
-      </div>
-
-      <div class="popup-form__box">
-        <span class="popup-form__desc popup-form__desc_link">Выслать пароль на e-mail</span>
-
-        <button type="submit" class="popup-form__submit">Вход</button>
-      </div>
-
-      <div class="popup-form__box">
-        <span class="popup-form__desc">или</span>
-
-        <div class="popup-form-social">
-          <a href="#" class="popup-form-social-link popup-form-social-link_g">
-            <img src="img/popup-google.png" alt="google">
-            <span class="popup-form-social-link__text">Google</span>
-          </a>
-
-          <a href="#" class="popup-form-social-link popup-form-social-link_fb">
-            <img src="img/popup-fb.png" alt="fb">
-            <span class="popup-form-social-link__text">Facebook</span>
-          </a>
-        </div>
       </div>
     </form>
   </div>

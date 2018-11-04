@@ -278,11 +278,14 @@
 
       background: $orange;
       border-radius: 5px;
-      cursor: pointer;
       text-decoration: none;
 
       &:hover {
         background-color: #f17c04;
+      }
+
+      @media ($desctop) {
+        cursor: pointer;
       }
 
       span {
@@ -365,6 +368,14 @@
     }
   }
 
+  .basket-add {
+    background: #fff;
+
+    @media ($desctop) {
+      background: #efeff6;
+    }
+  }
+
   .basket-add__row:first-child {
     margin: 2px 0;
   }
@@ -377,7 +388,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+
     @media ($desctop) {
       flex-direction: column;
       justify-content: flex-start;
@@ -389,8 +400,8 @@
       height: 40px;
 
       @media ($desctop) {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
       }
 
       svg {
@@ -461,7 +472,10 @@
   }
 
   &:hover .favorites__svg-box svg {
-    fill: $orange;
+
+    @media ($desctop) {
+      fill: $orange;
+    }
   }
 
   &.active .favorites__svg-box svg {
@@ -594,23 +608,43 @@
     }
   }
 
-  .swiper-button-wrap {
-    position: absolute;
-    top: 34px;
-    right: 50%;
-    z-index: 1;
-
-    transform: translateX(50%);
+  .swiper-pagination {
+    bottom: 35px;
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60px;
-    height: 30px;
-    border: 2px solid #f5f7f8;
-    border-radius: 5px;
+    justify-content: center;
+    width: 100%;
 
     @media ($desctop) {
+      display: none;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      margin: 0 7px;
+      background: #b2b3ce;
+
+      &-active {
+        background: $orange;
+      }
+    }
+  }
+
+  .swiper-button-wrap {
+    display: none;
+
+    @media ($desctop) {
+      position: absolute;
+      z-index: 1;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 60px;
+      height: 30px;
+      border: 2px solid #f5f7f8;
+      border-radius: 5px;
       top: 5px;
       right: 0;
       transform: translateX(0);
@@ -621,28 +655,20 @@
   .swiper-button-next {
     position: static;
     width: 12px;
-    height: 14px;
+    height: 16px;
     margin: 0;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-image: none;
     outline: none;
-  }
 
-  .swiper-button-prev {
-    background-image: url("../img/svg/slider/arrow-prev.svg");
-
-    &:hover {
-      background-image: url("../img/svg/slider/arrow-prev-active.svg");
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #6468A1;
     }
-  }
 
-  .swiper-button-next {
-    background-image: url("../img/svg/slider/arrow-next.svg");
-
-    &:hover {
-      background-image: url("../img/svg/slider/arrow-next-active.svg");
+    &:hover svg {
+      fill: $orange;
     }
   }
 

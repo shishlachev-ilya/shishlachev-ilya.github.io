@@ -189,7 +189,7 @@
     &__desc {
       display: block;
       margin: 0;
-      padding: 0 20px 0 0;
+      padding: 0;
 
       @include font(16px, $bold, $dark);
 
@@ -262,12 +262,43 @@
 
         &_fb {
           background: #2467b6;
+          
+          .popup-form-social-link__box {
+            background: #2467b6;
+          }
+
+          svg {
+            fill: #fff;
+          }
+        }
+
+        &__box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          width: 40px;
+          height: 40px;
+
+          background: #fff;
+          border-radius: 5px;
+          overflow: hidden;
         }
 
         &__text {
-          margin: 0 0 0 10px;
+          margin: 0 0 0 5px;
 
-          @include font(18px, $bold, #fff);
+          @include font(16px, $bold, #fff);
+
+          @media (min-width: 340px) {
+            margin: 0 0 0 7px;
+
+            @include font(18px, $bold, #fff);
+          }
+
+          @media ($desctop) {
+            margin: 0 0 0 10px;
+          }
         }
       }
     }

@@ -34,14 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: '.swiper-button-prev',
     },
 
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+
     // autoplay: {
     //   delay: 4000,
     // },
 
-    // mousewheel: {
-    //   invert: true,
-    //   forceToAxis: false,
-    // },
 
   });
 
@@ -140,6 +141,10 @@ document.addEventListener("DOMContentLoaded", function () {
   cards.forEach(function (item) {
     var card = new Card(item);
     card.init();
+  });
+
+  $(".detail-slider").on("click", ".favorites", function () {
+    $(this).toggleClass("active");
   });
 
 

@@ -19,19 +19,8 @@
         fill: #fff;
       }
 
-      .social-link__icon_g {
+      .svg-g path {
         fill: #fff !important;
-      }
-    }
-
-    &_g {
-      background-image: url("../img/svg/google.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 36px;
-
-      &:hover {
-        background-image: url("../img/svg/g-white.svg");
       }
     }
 
@@ -42,7 +31,6 @@
       &_fb {
         fill: #2467b6;
       }
-
     }
   }
 }
