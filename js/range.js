@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  $( ".range" ).slider({
+  $(".range" ).slider({
     range: true,
     min: 0,
     max: 5000,
@@ -35,5 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     $(".range").slider("values",1,value2);
   });
+
+  $('.range').draggable();
 
 });

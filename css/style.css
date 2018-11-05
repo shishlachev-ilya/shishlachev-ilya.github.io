@@ -1597,7 +1597,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-select {
   position: relative;
   display: inline-block;
-  width: 135px;
+  width: 150px;
   outline: none; }
   @media (min-width: 768px) {
     .form-select {
