@@ -191,9 +191,12 @@
 
       &__seemore {
         @include font(14px, $reg, $main);
-        cursor: pointer;
         text-decoration: underline;
         user-select: none;
+
+        @media ($desctop) {
+          cursor: pointer;
+        }
       }
     }
 

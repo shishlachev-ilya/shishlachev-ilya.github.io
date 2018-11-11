@@ -104,7 +104,7 @@
   }
 
   &-head {
-    text-align: right;
+    text-align: left;
     min-height: 71px;
 
     @media ($desctop) {
@@ -125,7 +125,7 @@
 
   &__bottom {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     @media ($desctop) {
@@ -136,17 +136,23 @@
   &-price {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     min-height: 50px;
     padding: 0 5px 0 0;
     letter-spacing: -.2px;
 
+    @media ($desctop) {
+      align-items: flex-end;
+    }
+
     &_card {
-      padding: 8px 8px 0 0;
+      align-items: flex-start;
+      padding: 8px 0 0;
 
       @media ($desctop) {
         padding: 8px 25px 0 0;
+        min-width: 120px;
       }
     }
 
@@ -388,9 +394,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
 
     @media ($desctop) {
-      flex-direction: column;
       justify-content: flex-start;
       min-height: 98px;
     }
@@ -412,13 +418,9 @@
     }
 
     &__title {
-      padding: 0 0 0 20px;
+      padding: 16px 0 0;
 
       @include font(16px, $bold, #c4c5e1);
-
-      @media ($desctop) {
-        padding: 20px 0 0;
-      }
     }
   }
 
@@ -441,7 +443,6 @@
   transform: scale(.9);
   opacity: 0;
 }
-
 
 .sale {
   position: absolute;
@@ -547,7 +548,10 @@
 
     border: 1px solid $main;
     list-style: none;
-    cursor: pointer;
+
+    @media ($desctop) {
+      cursor: pointer;
+    }
 
     & + .weight-list__item {
       margin: 0 0 0 -1px;
