@@ -162,6 +162,7 @@
       align-items: center;
       width: 28px;
       height: 28px;
+      margin: -1px 0 0;
 
       @include font(16px, $reg, #fff);
       font-weight: bold;

@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   new Swiper('.swiper-container', {
-    loop: true,
+    loop: false,
     loopAdditionalSlides: 5,
     loopedSlides: 3,
-    centeredSlides: true,
+    centeredSlides: false,
     slidesPerView: 'auto',
     speed: 500,
     spaceBetween: 4,
@@ -40,12 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     // autoplay: {
-    //   delay: 4000,
+    //   delay: 1000,
     // },
-
-
   });
-
 
   /**
    * popup

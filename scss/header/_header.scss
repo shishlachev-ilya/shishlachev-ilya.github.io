@@ -112,6 +112,8 @@
 
     background: #fff;
     outline: none;
+    box-shadow: none;
+    border-radius: 0;
 
     @media ($desctop) {
       color: #fff;
@@ -333,6 +335,10 @@
     display: flex;
 
     overflow: hidden;
+
+    .search__field {
+      border: none;
+    }
   }
 }
 

@@ -1989,7 +1989,8 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
-                justify-content: center; } }
+                justify-content: center;
+        padding: 3px 0 0; } }
   .product-price {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2025,8 +2026,8 @@ h1, h2, h3, h4, h5, h6 {
       padding: 8px 0 0; }
       @media (min-width: 768px) {
         .product-price_card {
-          padding: 8px 25px 0 0;
-          min-width: 120px; } }
+          padding: 10px 28px 0 0;
+          min-width: 115px; } }
     .product-price_once {
       padding: 0 25px 0 0; }
     .product-price__old {
@@ -2083,7 +2084,8 @@ h1, h2, h3, h4, h5, h6 {
       border-top: 15px solid #ff8b07; }
     .product-basket_catalog {
       width: 62px;
-      height: 40px; }
+      height: 40px;
+      margin: 0; }
     .product-basket_header {
       position: relative;
       display: -webkit-box;
@@ -2100,7 +2102,7 @@ h1, h2, h3, h4, h5, h6 {
         background-color: #f17c04; }
     .product-basket_properties {
       position: absolute;
-      top: 0;
+      bottom: -1px;
       right: 0;
       padding: 0;
       height: 100%; }
@@ -2238,7 +2240,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff; }
     @media (min-width: 768px) {
       .product .basket-add {
-        background: #efeff6; } }
+        background: #fff; } }
   .product .basket-add__row:first-child {
     margin: 2px 0; }
   .product .product-basket__link {
@@ -2587,6 +2589,18 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex: 0;
             flex: 0;
     width: auto; }
+  .offer .product .product__bottom {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 0 12px; }
+    @media (min-width: 768px) {
+      .offer .product .product__bottom {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 0; } }
   .offer .product .favorites {
     position: absolute;
     top: auto;
@@ -2617,6 +2631,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; }
   .offer .product .weight-list {
     position: static; }
+  .offer .product .basket-add {
+    background: #fff; }
   .offer .product .basket-add-item {
     padding: 0 5px; }
   .offer .product .basket-add_card {
@@ -2629,6 +2645,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 11px 0 6px;
     text-decoration: none;
     outline: none; }
+  .offer .product .basket-add_catalog {
+    top: -12px; }
 
 .footer {
   padding: 37px 0;
@@ -2955,7 +2973,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #6468a1;
     border: 3px solid #fff;
     background: #fff;
-    outline: none; }
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
     @media (min-width: 768px) {
       .search__field {
         color: #fff; } }
@@ -3157,6 +3179,8 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden; }
+  .mobile-wrap__line .search__field {
+    border: none; }
 
 .mobile-menu {
   position: relative;
@@ -4565,7 +4589,7 @@ h1, h2, h3, h4, h5, h6 {
             transform: scale(0); }
     @media (min-width: 768px) {
       .basket-add_catalog {
-        top: -4px;
+        top: -10px;
         right: -13px; } }
   .basket-add__row {
     display: -webkit-box;
@@ -4687,6 +4711,9 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%;
       height: 100%;
       fill: #cdcde5; }
+    .basket-empty__svg-box img {
+      width: 100%;
+      height: 100%; }
   .basket-empty__title {
     padding: 0 0 0 23px;
     font-size: 1.14286rem;
@@ -5664,6 +5691,7 @@ h1, h2, h3, h4, h5, h6 {
               align-items: center;
       width: 28px;
       height: 28px;
+      margin: -1px 0 0;
       font-size: 1.14286rem;
       font-family: "latoregular", sans-serif;
       color: #fff;
@@ -5872,8 +5900,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: -webkit-calc(100vh - 400px);
-  height: calc(100vh - 400px); }
+  height: -webkit-calc(100vh - 300px);
+  height: calc(100vh - 300px); }
   @media (min-width: 768px) {
     .not {
       height: -webkit-calc(100vh - 403px);
@@ -5892,6 +5920,9 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (min-width: 768px) {
+      .not-box {
+        height: auto; } }
     .not-box__head {
       font-size: 3.42857rem;
       font-family: "latobold", sans-serif;

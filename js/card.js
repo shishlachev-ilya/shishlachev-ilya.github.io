@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     self.remove = function () {
-      if(remove){
+      if (remove) {
         remove.addEventListener("click", function () {
           self.node.remove();
         });
@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var cards = document.querySelectorAll(".product");
 
-  cards.forEach(function (item) {
-    var card = new Card(item);
+  for (var i = 0; i < cards.length; i++) {
+    var card = new Card(cards[i]);
     card.init();
-  });
+  }
 
   $(".detail-slider").on("click", ".favorites", function () {
     $(this).toggleClass("active");
