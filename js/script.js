@@ -198,6 +198,8 @@ document.addEventListener("DOMContentLoaded", function () {
     self.list = [];
     self.text = "";
 
+    var listItems = self.node.querySelectorAll(".form-select__item");
+
     self.init = function () {
       self.list = self.node.querySelector(".form-select__list");
       self.text = self.node.querySelector(".form-select__head");
@@ -207,20 +209,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     self.addListeners = function () {
 
-      self.list.addEventListener("click", function (event) {
-        self.changeText(event.target);
+      listItems.forEach(function (item) {
+        item.addEventListener("click", function (event) {
+          self.changeText(event.target);
+        });
       });
+
+      // self.list.addEventListener("click", function (event) {
+      //   self.changeText(event.target);
+      // });
 
       self.node.addEventListener('click', function (event) {
         self.open(event.target);
-      });
-
-      self.node.addEventListener('mouseleave', function (event) {
-        self.close();
-      });
-
-      self.list.addEventListener('mouseleave', function (event) {
-        self.close();
       });
     };
 
@@ -250,6 +250,13 @@ document.addEventListener("DOMContentLoaded", function () {
     select.init();
     selectArr[i] = select;
   }
+
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest("[data-type='select']").length) {
+      $(".form-select__list").removeClass("open");
+    }
+    e.stopPropagation();
+  });
 
 
   /**
