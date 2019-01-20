@@ -1,0 +1,12 @@
+//common style
+@import "common/variables";
+@import "common/mixin";
+@import "common/basic";
+
+//other style
+@import "header";
+@import "banner";
+@import "catalog";
+@import "features";
+@import "footer";
+@import "m-menu";
