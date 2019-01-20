@@ -231,9 +231,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     deleteAllCards: function() {
       let btn = document.querySelector(".clear__btn");
-
+      let pagination = document.querySelector(".pagination");
       btn.addEventListener("click", function () {
         wrap.closest(".row").remove();
+        pagination.closest(".row").remove();
         inp.value = "";
         cards = {};
         if(cards.length === undefined) {
