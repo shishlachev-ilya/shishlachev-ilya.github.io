@@ -5,19 +5,19 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>RobinDog главная</title>
+  <title>RobinDog Каталог размеров</title>
 
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
 <div class="wrapper">
   <div class="banner-top">
-      <a href="#" class="banner-top__link">
-        <img src="img/banner.svg" alt="banner">
-      </a>
+    <a href="#" class="banner-top__link">
+      <img src="img/banner.svg" alt="banner">
+    </a>
   </div>
 
   <header class="header">
@@ -105,7 +105,7 @@
 
                 <span class="info-link__text info-link__text_header">0 800 303-344</span>
               </a>
-              <span class="info__desc open-popup" data-target="phone">(Бесплатно для Украины)</span>
+              <span class="info__desc">(Бесплатно для Украины)</span>
             </div>
 
             <div class="callback">
@@ -159,7 +159,7 @@
             </div>
 
             <div class="user-cabinet">
-              <button class="open-popup user-cabinet__link" data-target="enterok">
+              <button class="open-popup user-cabinet__link" data-target="enter">
                 Личный кабинет
               </button>
             </div>
@@ -184,99 +184,264 @@
   </header>
 
   <main class="main">
-    <section class="catalog-size">
+    <section class="breadcrumbs">
       <div class="container">
-        <div class="header-section">
-          <h2 class="header-section__title open-popup" data-target="thanks">Каталог по размерам пород</h2>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-list-item">
+            <a href="#" class="breadcrumbs-list-item__link">Главная</a>
+          </li>
+
+          <li class="breadcrumbs-list-item">
+            <span class="breadcrumbs-list-item__text">Очень маленькие породы</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="catalog-size catalog-size_m">
+      <div class="container">
+
+        <div class="subtitle-wrap">
+          <div class="back back_abs">
+            <a href="#" class="back-link">
+            <span class="back-link__svg-box">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#double"></use>
+              </svg>
+            </span>
+
+              <span class="back-link__text">Назад</span>
+            </a>
+          </div>
+
+          <div class="subtitle-section">
+            <div class="subtitle-section__svg-box subtitle-section__svg-box_very-small">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#verySmallDog"></use>
+              </svg>
+            </div>
+
+            <h2 class="subtitle-section__title">
+              Очень маленькие породы
+              <span class="subtitle-section__desc">до 4 кг</span>
+            </h2>
+          </div>
+
         </div>
 
         <div class="catalog-wrap">
-          <a href="catalog-size.html" class="catalog-item">
-            <div class="catalog-item-img">
-              <div class="catalog-item-img__svg-box catalog-item-img__svg-box_vary-small">
+          <a href="catalog.html" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_dry">
                 <svg>
-                  <use xlink:href="img/svg/sprite.svg#verySmallDog"></use>
+                  <use xlink:href="img/svg/sprite.svg#dry"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="catalog-item-title">
-              <h3 class="catalog-item-title__head">Очень маленькие <br> породы</h3>
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Сухие корма (12)</h3>
             </div>
 
-            <div class="catalog-item-desc">
+            <div class="catalog-item-desc" style="display: none;">
               <span class="catalog-item-desc__text">до 4 кг</span>
             </div>
           </a>
 
-          <a href="#" class="catalog-item">
-            <div class="catalog-item-img">
-              <div class="catalog-item-img__svg-box catalog-item-img__svg-box_small">
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_wet">
                 <svg>
-                  <use xlink:href="img/svg/sprite.svg#smallDog"></use>
+                  <use xlink:href="img/svg/sprite.svg#wet"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="catalog-item-title">
-              <h3 class="catalog-item-title__head">Маленькие <br> породы</h3>
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Влажные корма (20)</h3>
             </div>
 
-            <div class="catalog-item-desc">
+            <div class="catalog-item-desc" style="display: none;">
               <span class="catalog-item-desc__text">от 5 до 10 кг</span>
             </div>
           </a>
 
-          <a href="#" class="catalog-item">
-            <div class="catalog-item-img">
-              <div class="catalog-item-img__svg-box catalog-item-img__svg-box_medium">
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_goodies">
                 <svg>
-                  <use xlink:href="img/svg/sprite.svg#mediumDog"></use>
+                  <use xlink:href="img/svg/sprite.svg#goodies"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="catalog-item-title">
-              <h3 class="catalog-item-title__head">Средние <br> породы</h3>
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Лакомства (12)</h3>
             </div>
 
-            <div class="catalog-item-desc">
+            <div class="catalog-item-desc" style="display: none;">
               <span class="catalog-item-desc__text">от 11 до 24 кг</span>
             </div>
           </a>
 
-          <a href="#" class="catalog-item">
-            <div class="catalog-item-img">
-              <div class="catalog-item-img__svg-box catalog-item-img__svg-box_big">
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_leash">
                 <svg>
-                  <use xlink:href="img/svg/sprite.svg#bigDog"></use>
+                  <use xlink:href="img/svg/sprite.svg#leash"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="catalog-item-title">
-              <h3 class="catalog-item-title__head">Крупные и гигантские <br> породы</h3>
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Поводки, ошейники, намордники (999)</h3>
             </div>
 
-            <div class="catalog-item-desc">
+            <div class="catalog-item-desc" style="display: none;">
               <span class="catalog-item-desc__text">от 25кг</span>
             </div>
           </a>
 
-          <a href="#" class="catalog-item catalog-item_full">
-            <div class="catalog-item-img catalog-item-img_common">
-              <div class="catalog-item-img__svg-box catalog-item-img__svg-box_common">
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_leash">
                 <svg>
-                  <use xlink:href="img/svg/sprite.svg#square"></use>
+                  <use xlink:href="img/svg/sprite.svg#toys"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="catalog-item-title">
-              <h3 class="catalog-item-title__head">Общий каталог</h3>
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Игрушки для собак (12)</h3>
             </div>
 
-            <div class="catalog-item-desc catalog-item-desc_zero">
+            <div class="catalog-item-desc" style="display: none;">
+              <span class="catalog-item-desc__text">от 25кг</span>
+            </div>
+          </a>
+
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_bags">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#bags"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Средства от паразитов (12)</h3>
+            </div>
+
+            <div class="catalog-item-desc" style="display: none;">
+              <span class="catalog-item-desc__text">от 25кг</span>
+            </div>
+          </a>
+
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_cell">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#cell"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Клетки и переноски (12)</h3>
+            </div>
+
+            <div class="catalog-item-desc" style="display: none;">
+              <span class="catalog-item-desc__text">от 25кг</span>
+            </div>
+          </a>
+
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_vitamins">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#vitamins"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Витамины и пищевые добавки (12)</h3>
+            </div>
+
+            <div class="catalog-item-desc" style="display: none;">
+              <span class="catalog-item-desc__text">от 25кг</span>
+            </div>
+          </a>
+
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_accessories">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#accessories"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Аксессуары для дома, миски (12)</h3>
+            </div>
+
+            <div class="catalog-item-desc" style="display: none;">
+              <span class="catalog-item-desc__text">от 25кг</span>
+            </div>
+          </a>
+
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_hygiene">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#hygiene"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Уход и гигиена (12)</h3>
+            </div>
+
+            <div class="catalog-item-desc" style="display: none;">
+              <span class="catalog-item-desc__text">от 25кг</span>
+            </div>
+          </a>
+
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_clothes">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#clothes"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Одежда, обувь, украшения (12)</h3>
+            </div>
+
+            <div class="catalog-item-desc" style="display: none;">
+              <span class="catalog-item-desc__text">от 25кг</span>
+            </div>
+          </a>
+
+          <a href="#" class="catalog-item catalog-item_size">
+            <div class="catalog-item-img catalog-item-img_size">
+              <div class="catalog-item__svg-box catalog-item__svg-box_clothes">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#milk"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog-item-title catalog-item-title_size">
+              <h3 class="catalog-item-title__head catalog-item-title__head_size">Заменители молока для женков (12)</h3>
+            </div>
+
+            <div class="catalog-item-desc" style="display: none;">
               <span class="catalog-item-desc__text">от 25кг</span>
             </div>
           </a>
@@ -284,50 +449,7 @@
       </div>
     </section>
 
-    <section class="banner">
-      <div class="container">
-        <div class="banner-wrap">
-          <div class="banner-wrap__col">
-            <div class="banner-head">
-              <p class="banner-head__text">Клубная программа <span>скидок</span></p>
-              <p class="banner-head__text">от <span>5</span> до <span>10%</span> экономии</p>
-            </div>
-          </div>
-
-          <div class="banner-wrap__col">
-            <div class="btn-wrap">
-              <button class="open-popup btn" data-target="reg">
-                Регистрация
-              </button>
-            </div>
-
-            <div class="social">
-              <a href="#" class="social-link">
-                <svg
-                  class="svg-g"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M113.47 171.14L95.648 237.672L30.509 239.05C11.042 202.943 0 161.632 0 117.732C0 75.281 10.324 35.249 28.624 0H28.638L86.63 10.632L112.034 68.276C106.717 83.777 103.819 100.417 103.819 117.732C103.821 136.524 107.225 154.529 113.47 171.14Z" transform="translate(0 138.268)" fill="#FBBB00"/>
-                  <path d="M245.899 0C248.839 15.486 250.372 31.479 250.372 47.824C250.372 66.152 248.445 84.03 244.774 101.275C232.312 159.958 199.749 211.2 154.64 247.462L154.626 247.448L81.582 243.721L71.244 179.186C101.176 161.632 124.568 134.161 136.89 101.275H0V0H138.887H245.899Z" transform="translate(261.628 208.176)" fill="#518EF8"/>
-                  <path d="M385.744 146.215L385.758 146.229C341.887 181.492 286.157 202.591 225.491 202.591C128 202.591 43.239 148.1 0 67.91L82.961 0C104.58 57.698 160.239 98.771 225.491 98.771C253.538 98.771 279.814 91.189 302.361 77.953L385.744 146.215Z" transform="translate(30.509 309.409)" fill="#28B446"/>
-                  <path d="M390.78 58.936L307.847 126.832C284.512 112.246 256.928 103.82 227.376 103.82C160.647 103.82 103.947 146.777 83.411 206.544L0.0139999 138.268H0C42.606 56.123 128.436 0 227.376 0C289.491 0 346.444 22.126 390.78 58.936Z" transform="translate(28.624)" fill="#F14336"/>
-                </svg>
-              </a>
-
-              <a href="#" class="social-link">
-                <svg class="social-link__icon social-link__icon_fb">
-                  <use xlink:href="img/svg/sprite.svg#fb"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="offer">
+    <section class="offer offer_m">
       <div class="container">
         <div class="header-section">
           <h2 class="header-section__title">Лучшие предложения</h2>
@@ -544,7 +666,9 @@
 
                   <div class="product-not">
                     <div class="product-not__svg-box">
-                      <img src="img/emptycard.svg" alt="нет в наличии">
+                      <svg>
+                        <use href="img/svg/sprite.svg#empty"></use>
+                      </svg>
                     </div>
 
                     <span class="product-not__title">Нет в наличии</span>
@@ -1198,70 +1322,17 @@
         <div class="swiper-button-wrap">
           <div class="swiper-button-prev">
             <svg
-              viewBox="0 0 12 20"
-              xmlns="http://www.w3.org/2000/svg">
+                    viewBox="0 0 12 20"
+                    xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M11.99 10.106L2.098 19.99L0 18.543L8.556 9.995L0 1.447L2.098 0L11.99 9.884L11.83 9.995L11.99 10.106Z" transform="translate(11.9961 19.9949) rotate(-180)"/>
             </svg>
           </div>
           <div class="swiper-button-next">
             <svg
-              viewBox="0 0 12 20"
-              xmlns="http://www.w3.org/2000/svg">
+                    viewBox="0 0 12 20"
+                    xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.502" fill-rule="evenodd" clip-rule="evenodd" d="M11.99 10.106L2.098 19.99L0 18.543L8.556 9.995L0 1.447L2.098 0L11.99 9.884L11.83 9.995L11.99 10.106Z" transform="translate(0.00610352 0.00488281)" />
             </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="seo">
-      <div class="container">
-        <div class="seo-wrap" data-info="info">
-          <div class="seo-wrap-content" data-content="content">
-            <h2>Интернет магазин Robin Dog</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
-              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
-              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
-              minima natus officiis perspiciatis quidem sit tempore totam ullam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aut consectetur enim fugiat, impedit
-              ipsam laboriosam nisi nobis odio pariatur, perspiciatis provident quia quod rerum, sed vitae! Corporis culpa,
-              fugit nam natus necessitatibus officiis quis sit vitae. Consectetur consequatur culpa hic in iure libero magni
-              mollitia omnis porro quam qui quos, suscipit velit vitae voluptatem. Aliquam at consequuntur corporis eius
-              quam recusandae similique, sint vel veniam voluptatum? A alias aliquid dolore ducimus eius eligendi explicabo
-              in incidunt ipsa ipsam iusto laudantium magnam molestias mollitia necessitatibus nobis nostrum, nulla odit
-              officiis possimus praesentium quas qui suscipit tenetur veritatis voluptate voluptatem. Adipisci aliquam amet
-              aperiam, assumenda, autem commodi, cupiditate deserunt dolores eius error est et in mollitia neque perferendis
-              perspiciatis possimus rerum sapiente soluta tempora tenetur totam unde vel. Accusantium ad alias aliquid
-              assumenda aut, cupiditate deleniti dignissimos distinctio dolorem dolorum eius fugiat id in maxime minima
-              mollitia nam neque odio officia quae quidem sint tempore temporibus tenetur voluptatem voluptatibus,
-              voluptatum. Aliquam dolorum fuga praesentium rem. Ad aliquid amet cumque debitis eaque fuga possimus quia rem
-              reprehenderit. Ad alias dignissimos esse explicabo hic impedit maiores molestiae nemo neque non optio pariatur
-              quas, ratione rerum voluptatibus. Illo repudiandae soluta vitae! Cum, harum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
-              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
-              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
-              minima natus officiis perspiciatis quidem sit tempore totam ullam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
-              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
-              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
-              minima natus officiis perspiciatis quidem sit tempore totam ullam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
-              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
-              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
-              minima natus officiis perspiciatis quidem sit tempore totam ullam.
-            </p>
-          </div>
-          <div class="seo-wrap-btn" data-btn="btn">
-            <span class="seo-wrap-btn__seemore">Показать полностью</span>
           </div>
         </div>
       </div>
@@ -1649,59 +1720,6 @@
         <button type="submit" class="popup-form__submit">Отправить</button>
       </div>
     </form>
-  </div>
-
-  <div class="popup-close close">
-    <svg class="popup-close__icon">
-      <use xlink:href="img/svg/sprite.svg#close"></use>
-    </svg>
-  </div>
-
-</div>
-
-<div id="enterok" class="popup-window">
-  <div class="popup-head">
-    <h6 class="popup-head__title">Вход выполнен</h6>
-  </div>
-
-  <div class="popup-content">
-    <a href="#" class="popup-content__btn">К покупкам!</a>
-  </div>
-
-  <div class="popup-close close">
-    <svg class="popup-close__icon">
-      <use xlink:href="img/svg/sprite.svg#close"></use>
-    </svg>
-  </div>
-
-</div>
-
-<div id="phone" class="popup-window">
-  <div class="popup-head">
-    <h6 class="popup-head__title">Мы свяжемся с Вами в ближайшее время</h6>
-  </div>
-
-  <div class="popup-content">
-    <a href="#" class="popup-content__btn">Продолжить покупки</a>
-  </div>
-
-  <div class="popup-close close">
-    <svg class="popup-close__icon">
-      <use xlink:href="img/svg/sprite.svg#close"></use>
-    </svg>
-  </div>
-
-</div>
-
-<div id="thanks" class="popup-window">
-  <div class="popup-head">
-    <h6 class="popup-head__title">Спасибо за регистрацию!</h6>
-  </div>
-
-  <div class="popup-content">
-    <p class="popup-content__par">Вам на почту было отправлено письмо со ссылкой для подтверждения регистрации.</p>
-
-    <a href="#" class="popup-content__btn">К покупкам!</a>
   </div>
 
   <div class="popup-close close">

@@ -1,0 +1,2168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RobinDog Каталог</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
+  <!--<link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">-->
+  <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="banner-top">
+    <a href="#" class="banner-top__link">
+      <img src="img/banner.svg" alt="banner">
+    </a>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="mobile-wrap">
+        <div class="mobile-wrap__line">
+          <div class="mobile-menu">
+            <span></span>
+          </div>
+
+          <form class="search">
+            <input type="text" class="search__field" placeholder="Я ищу ..." required>
+            <button type="submit" class="search__submit">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#loupe"></use>
+              </svg>
+            </button>
+          </form>
+
+        </div>
+
+        <div class="mobile-wrap__line">
+          <div class="logo">
+            <a href="index.html" class="logo__link logo__link_m">
+              <img src="img/svg/logo.svg" alt="logo">
+            </a>
+          </div>
+
+          <div class="search-box">
+            <div class="like">
+              <a href="#" class="like-link">
+                <div class="like-link__svg-box">
+                  <svg>
+                    <use xlink:href="img/svg/sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <span class="like-link__text">22</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="basket-box">
+            <div class="product-basket product-basket_m">
+              <a href="basket.html" class="product-basket__link product-basket__link_m">
+                <div class="product-basket__svg-box">
+                  <svg>
+                    <use xlink:href="img/svg/sprite.svg#cart"></use>
+                  </svg>
+                </div>
+
+                <span>10</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-wrap">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img src="img/svg/logo.svg" alt="logo">
+          </a>
+        </div>
+
+        <div class="header__info">
+
+          <div class="header__row">
+            <form class="search">
+              <input type="text" class="search__field" placeholder="Я ищу ..." required>
+              <button type="submit" class="search__submit">
+                <svg width="20" height="20">
+                  <use xlink:href="img/svg/sprite.svg#loupe"></use>
+                </svg>
+              </button>
+            </form>
+
+            <div class="info info_header">
+              <a href="tel:+380631230809" class="info-link">
+                <div class="info-link__svg-box info-link__svg-box_header">
+                  <svg>
+                    <use xlink:href="img/svg/sprite.svg#tel"></use>
+                  </svg>
+                </div>
+
+                <span class="info-link__text info-link__text_header">0 800 303-344</span>
+              </a>
+              <span class="info__desc">(Бесплатно для Украины)</span>
+            </div>
+
+            <div class="callback">
+              <button class="open-popup callback__link callback__link_header" data-target="callback-popup">
+                Вам перезвонить?
+              </button>
+              <!--<a href="#callback-popup" class="open-popup callback__link callback__link_header">Вам перезвонить?</a>-->
+            </div>
+
+            <div class="like">
+              <a href="#" class="like-link">
+                <div class="like-link__svg-box">
+                  <svg>
+                    <use xlink:href="img/svg/sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <span class="like-link__text">22</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="header__row">
+            <div class="user-info">
+              <a href="#" class="user-info-link">
+                <span class="user-info-link__title">Покупателям</span>
+              </a>
+              <div class="drop-menu">
+                <ul class="drop-list">
+                  <li class="drop-list__item">
+                    <a href="#" class="drop-list__link">Доставка</a>
+                  </li>
+
+                  <li class="drop-list__item">
+                    <a href="#" class="drop-list__link">Оплата</a>
+                  </li>
+
+                  <li class="drop-list__item">
+                    <a href="#" class="drop-list__link">Возврат</a>
+                  </li>
+
+                  <li class="drop-list__item">
+                    <a href="#" class="drop-list__link">Гарантии</a>
+                  </li>
+
+                  <li class="drop-list__item">
+                    <a href="#" class="drop-list__link">Блог</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-cabinet">
+              <button class="open-popup user-cabinet__link" data-target="enter">
+                Личный кабинет
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="product-basket product-basket_header">
+          <a href="basket.html" class="product-basket__link product-basket__link_header">
+            <div class="product-basket__svg-box">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#cart"></use>
+              </svg>
+            </div>
+
+            <span>10</span>
+          </a>
+          <span class="product-basket__current">5 555 грн</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-list-item">
+            <a href="#" class="breadcrumbs-list-item__link">Главная</a>
+          </li>
+
+          <li class="breadcrumbs-list-item">
+            <a href="#" class="breadcrumbs-list-item__link">Каталог</a>
+          </li>
+
+          <li class="breadcrumbs-list-item">
+            <a href="#" class="breadcrumbs-list-item__link">Сухие корма</a>
+          </li>
+
+          <li class="breadcrumbs-list-item">
+            <span class="breadcrumbs-list-item__text">
+              Brit Care (Брит Кеа) Adult Giant Salmon & Potato для собак
+              гигантских пород (лосось и картофель)
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="catalog-group">
+      <div class="container">
+        <div class="catalog-group-wrap">
+          <div class="catalog-group__col one">
+            <div class="detail-back">
+              <div class="back back_one">
+                <a href="#" class="back-link">
+                  <div class="back-link__svg-box">
+                    <svg>
+                      <use xlink:href="img/svg/sprite.svg#double"></use>
+                    </svg>
+                  </div>
+
+                  <span class="back-link__text">Назад</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="catalog-filter">
+              <form action="" class="catalog-form">
+                <div class="accordeon-wrapper accordeon-wrapper_nomar">
+                  <div class="accordeon-box">
+                    <div class="accordeon-box-head accordeon-box-head_filter" data-toggle="toggle">
+                      <h6 class="accordeon-box-head__title accordeon-box-head__title_filter">Размер породы</h6>
+                    </div>
+
+                    <div class="accordeon-box-content">
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="size1" class="catalog-form-box__field">
+                        <label for="size1" class="catalog-form-box__label">
+                          Очень маленькие породы собак
+                          <span>+10</span>
+                        </label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="size2" class="catalog-form-box__field">
+                        <label for="size2" class="catalog-form-box__label">
+                          Маленькие породы собак или тут может быть очень длинное название
+                          <span>+15</span>
+                        </label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="size3" class="catalog-form-box__field">
+                        <label for="size3" class="catalog-form-box__label">
+                          Средние
+                          <span>+43</span>
+                        </label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="size4" class="catalog-form-box__field">
+                        <label for="size4" class="catalog-form-box__label">
+                          Большие, гигантские
+                          <span>+1</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordeon-box">
+                    <div class="accordeon-box-head accordeon-box-head_filter" data-toggle="toggle">
+                      <h6 class="accordeon-box-head__title accordeon-box-head__title_filter">Возвраст собаки</h6>
+                    </div>
+
+                    <div class="accordeon-box-content">
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="age1" class="catalog-form-box__field">
+                        <label for="age1" class="catalog-form-box__label">1 год</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="age2" class="catalog-form-box__field">
+                        <label for="age2" class="catalog-form-box__label">2 года</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="age3" class="catalog-form-box__field">
+                        <label for="age3" class="catalog-form-box__label">3 года</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="age4" class="catalog-form-box__field">
+                        <label for="age4" class="catalog-form-box__label">4 года</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordeon-box">
+                    <div class="accordeon-box-head accordeon-box-head_filter" data-toggle="toggle">
+                      <h6 class="accordeon-box-head__title accordeon-box-head__title_filter">Бредны</h6>
+                    </div>
+
+                    <div class="accordeon-box-content">
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="brend1" class="catalog-form-box__field">
+                        <label for="brend1" class="catalog-form-box__label">Бренд 1</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="brend2" class="catalog-form-box__field">
+                        <label for="brend2" class="catalog-form-box__label">Бренд 2</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="brend3" class="catalog-form-box__field">
+                        <label for="brend3" class="catalog-form-box__label">Бренд 3</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="brend4" class="catalog-form-box__field">
+                        <label for="brend4" class="catalog-form-box__label">Бренд 4</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordeon-box">
+                    <div class="accordeon-box-head accordeon-box-head_filter" data-toggle="toggle">
+                      <h6 class="accordeon-box-head__title accordeon-box-head__title_filter">Назначение</h6>
+                    </div>
+
+                    <div class="accordeon-box-content">
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="for1" class="catalog-form-box__field">
+                        <label for="for1" class="catalog-form-box__label">Назначение 1</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="for2" class="catalog-form-box__field">
+                        <label for="for2" class="catalog-form-box__label">Назначение 2</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="for3" class="catalog-form-box__field">
+                        <label for="for3" class="catalog-form-box__label">Назначение 3</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="for4" class="catalog-form-box__field">
+                        <label for="for4" class="catalog-form-box__label">Назначение 4</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordeon-box">
+                    <div class="accordeon-box-head accordeon-box-head_filter" data-toggle="toggle">
+                      <h6 class="accordeon-box-head__title accordeon-box-head__title_filter">Состав</h6>
+                    </div>
+
+                    <div class="accordeon-box-content">
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="about1" class="catalog-form-box__field">
+                        <label for="about1" class="catalog-form-box__label">Состав 1</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="about2" class="catalog-form-box__field">
+                        <label for="about2" class="catalog-form-box__label">Состав 2</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="about3" class="catalog-form-box__field">
+                        <label for="about3" class="catalog-form-box__label">Состав 3</label>
+                      </div>
+
+                      <div class="catalog-form-box">
+                        <input type="checkbox" id="about4" class="catalog-form-box__field">
+                        <label for="about4" class="catalog-form-box__label">Состав 4</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordeon-box open">
+                    <div class="accordeon-box-head accordeon-box-head_filter minus" data-toggle="toggle">
+                      <h6 class="accordeon-box-head__title accordeon-box-head__title_filter">Цена <span>(грн)</span>
+                      </h6>
+                    </div>
+
+                    <div class="accordeon-box-content" style="display: block;">
+                      <div class="catalog-form-box catalog-form-box_row">
+                        <input type="text" class="from catalog-form-box__price">
+                        <span class="line"></span>
+                        <input type="text" class="to catalog-form-box__price">
+                        <button type="button" class="catalog-form-box__submit">Ок</button>
+                      </div>
+
+                      <div class="catalog-form-box catalog-form-box_range">
+                        <div class="range"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <div class="catalog-group__col two">
+            <div class="back back_m">
+              <a href="#" class="back-link">
+            <span class="back-link__svg-box">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#double"></use>
+              </svg>
+            </span>
+
+                <span class="back-link__text">Продолжить покупки</span>
+              </a>
+            </div>
+
+            <div class="catalog-group-head">
+              <div class="catalog-item__svg-box catalog-item__svg-box_dry">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#dry"></use>
+                </svg>
+              </div>
+
+              <h2 class="catalog-group-head__title">Сухой корм</h2>
+            </div>
+
+            <div class="catalog-group__row">
+              <div class="catalog-group__line">
+                <div class="catalog-group__hold">
+                  <div class="catalog-group-filter">
+                    <span class="catalog-group-filter__item">Очень маленькие</span>
+
+                    <div class="ordering-item__close ordering-item__close_result">
+                      <img src="img/svg/backgrounds/close.svg" alt="close">
+                    </div>
+                  </div>
+
+                  <div class="catalog-group-filter">
+                    <span class="catalog-group-filter__item">Большие, гигантские</span>
+
+                    <div class="ordering-item__close ordering-item__close_result">
+                      <img src="img/svg/backgrounds/close.svg" alt="close">
+                    </div>
+                  </div>
+
+                  <div class="catalog-group-filter">
+                    <span class="catalog-group-filter__item">Состав 1</span>
+
+                    <div class="ordering-item__close ordering-item__close_result">
+                      <img src="img/svg/backgrounds/close.svg" alt="close">
+                    </div>
+                  </div>
+
+                  <div class="catalog-group-filter">
+                    <span class="catalog-group-filter__item">Очень маленькие</span>
+
+                    <div class="ordering-item__close ordering-item__close_result">
+                      <img src="img/svg/backgrounds/close.svg" alt="close">
+                    </div>
+                  </div>
+
+                  <div class="catalog-group-filter">
+                    <span class="catalog-group-filter__item">1 год</span>
+
+                    <div class="ordering-item__close ordering-item__close_result">
+                      <img src="img/svg/backgrounds/close.svg" alt="close">
+                    </div>
+                  </div>
+
+                  <div class="catalog-group-filter">
+                    <span class="catalog-group-filter__item">Бренд 2</span>
+
+                    <div class="ordering-item__close ordering-item__close_result">
+                      <img src="img/svg/backgrounds/close.svg" alt="close">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-group__line">
+                <div class="catalog-group__column">
+                  <div class="catalog-group-reset">
+                    <span class="catalog-group-reset__item">Сбросить</span>
+                  </div>
+
+                  <div class="catalog-group-result">
+                    <span class="catalog-group-result__item">2 345 результатов</span>
+                  </div>
+                </div>
+
+                <div class="catalog-group__column">
+                  <div class="catalog-group-sort">
+                    <span class="catalog-group-sort__head">Сортировать по:</span>
+
+                    <div class="form-select" data-type="select">
+                      <span class="form-select__head">Популярности</span>
+                      <ul class="form-select__list">
+                        <li class="form-select__item">Популярности</li>
+                        <li class="form-select__item">Дешевые в начале</li>
+                        <li class="form-select__item">Дорогие в начале</li>
+                        <li class="form-select__item">Скидкам</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="catalog-group__column">
+                  <div class="m-filter-btn">
+                    <div class="m-filter-btn__count">12</div>
+                    <div class="m-filter-btn__title">Фильтры</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-group__product">
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_1.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-30%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_1.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-30%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_5.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-25%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        1320 Трикси Чехол на кресло нейлон 215х145
+                      </a>
+                    </div>
+
+                    <div class="product-not">
+                      <div class="product-not__svg-box">
+                        <svg>
+                          <use href="img/svg/sprite.svg#empty"></use>
+                        </svg>
+                      </div>
+
+                      <span class="product-not__title">Нет в наличии</span>
+                    </div>
+
+                    <div class="product-weight" style="display: none;">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom" style="display: none;">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <!--<div class="product-basket__link">-->
+                      <!--<div class="product-basket__svg-box product-basket__svg-box_cart">-->
+                      <!--<svg>-->
+                      <!--<use xlink:href="img/svg/sprite.svg#cart"></use>-->
+                      <!--</svg>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_3.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-10%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <!--<div class="product-basket__link">-->
+                      <!--<div class="product-basket__svg-box product-basket__svg-box_cart">-->
+                      <!--<svg>-->
+                      <!--<use xlink:href="img/svg/sprite.svg#cart"></use>-->
+                      <!--</svg>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_1.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-30%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <!--<div class="product-basket__link">-->
+                      <!--<div class="product-basket__svg-box product-basket__svg-box_cart">-->
+                      <!--<svg>-->
+                      <!--<use xlink:href="img/svg/sprite.svg#cart"></use>-->
+                      <!--</svg>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_2.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-30%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <!--<div class="product-basket__link">-->
+                      <!--<div class="product-basket__svg-box product-basket__svg-box_cart">-->
+                      <!--<svg>-->
+                      <!--<use xlink:href="img/svg/sprite.svg#cart"></use>-->
+                      <!--</svg>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_3.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-30%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <!--<div class="product-basket__link">-->
+                      <!--<div class="product-basket__svg-box product-basket__svg-box_cart">-->
+                      <!--<svg>-->
+                      <!--<use xlink:href="img/svg/sprite.svg#cart"></use>-->
+                      <!--</svg>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_5.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-30%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <!--<div class="product-basket__link">-->
+                      <!--<div class="product-basket__svg-box product-basket__svg-box_cart">-->
+                      <!--<svg>-->
+                      <!--<use xlink:href="img/svg/sprite.svg#cart"></use>-->
+                      <!--</svg>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__col">
+                  <div class="product__top">
+                    <a href="catalog-basket.html" class="product-img">
+                      <img src="img/goods/img_1.jpg" alt="товар">
+                    </a>
+                    <div class="sale">
+                      <span class="sale__item">-30%</span>
+                    </div>
+                    <div class="favorites">
+                      <div class="favorites__svg-box">
+                        <svg>
+                          <use xlink:href="img/svg/sprite.svg#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__col">
+                  <div class="product-middle">
+                    <div class="product-head">
+                      <a href="#" class="product-head__title">
+                        Brit Care (Брит Кеа) Adult Giant Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </a>
+                    </div>
+
+                    <div class="product-weight">
+                      <ul class="weight-list">
+                        <li class="weight-list__item active" data-get-old="1 200" data-get-new="1 000">
+                          <span class="weight-list__title">1 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="3 300" data-get-new="3 200">
+                          <span class="weight-list__title">3 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="7500" data-get-new="7 300">
+                          <span class="weight-list__title">7 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="1 350" data-get-new="1 300">
+                          <span class="weight-list__title">13 кг</span>
+                        </li>
+                        <li class="weight-list__item" data-get-old="10 500" data-get-new="10 000">
+                          <span class="weight-list__title">10 кг</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="product__bottom">
+                    <div class="product-price product-price_card">
+                      <span class="product-price__old" data-set-old="price">22 600 грн</span>
+                      <span class="product-price__new" data-set-new="price">22 356 грн</span>
+                    </div>
+
+                    <div class="product-basket product-basket_catalog">
+                      <!--<div class="product-basket__link">-->
+                      <!--<div class="product-basket__svg-box product-basket__svg-box_cart">-->
+                      <!--<svg>-->
+                      <!--<use xlink:href="img/svg/sprite.svg#cart"></use>-->
+                      <!--</svg>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="properties-item-basket properties-item-basket_catalog" data-basket="basket">
+                        <div class="basket-add basket-add_catalog" data-to-cart="basket">
+                          <div class="basket-add__row">
+                            <div class="basket-add-head">
+                              <span class="basket-add-head__title">В корзине:</span>
+                            </div>
+                          </div>
+
+                          <div class="basket-add__row" data-add="basket">
+                            <div class="basket-add-item" data-minus="basket">
+                              <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                            </div>
+
+                            <div class="basket-add-count" data-sum="basket">1</div>
+
+                            <div class="basket-add-item" data-plus="basket">
+                              <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-basket product-basket_properties" data-to-basket="basket">
+                          <div class="product-basket__link">
+                            <div class="product-basket__svg-box product-basket__svg-box_cart">
+                              <svg>
+                                <use xlink:href="img/svg/sprite.svg#cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="load">
+              <div class="load__svg-box">
+                <svg class="load__icn">
+                  <use xlink:href="img/svg/sprite.svg#load"></use>
+                </svg>
+              </div>
+
+              <span class="load__link">Показать еще</span>
+            </button>
+
+            <div class="pagination">
+              <ul class="pagination-list">
+                <li style="display: none">
+                  <a href="#" class="pagination-list__link pagination-list__link_prev">
+                    <svg width="12" height="9">
+                      <use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li><a href="#" class="pagination-list__link current">1</a></li>
+                <li><a href="#" class="pagination-list__link">2</a></li>
+                <li><a href="#" class="pagination-list__link">3</a></li>
+                <li class="pagination-list__dots">...</li>
+                <li><a href="#" class="pagination-list__link">14</a></li>
+                <li>
+                  <a href="#" class="pagination-list__link pagination-list__link_next">
+                    <svg width="12" height="9">
+                      <use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="catalog-group__col tree">
+
+            <div class="basket-small">
+              <div class="basket-small-item">
+                <div class="basket-small-item__row">
+                  <div class="basket-small-item__col">
+                    <div class="ordering-item-img ordering-item-img_bs">
+                      <img src="img/goods/img_1.jpg" alt="img">
+                    </div>
+                  </div>
+
+                  <div class="basket-small-item__col">
+                    <div class="ordering-item-weight ordering-item-weight_bs">
+                      <span class="ordering-item-weight__item">12 кг</span>
+                    </div>
+
+                    <div class="ordering-item-desc ordering-item-desc_bs">
+                      <span class="ordering-item-desc__title">
+                        Brit Care (Брит <br>Кеа) Adult Giant <br>Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-small-item__row">
+                  <div class="ordering-item-price ordering-item-price_catalog">
+                    <div class="basket-add">
+                      <div class="basket-add__row" style="display: none">
+                        <div class="basket-add-head">
+                          <span class="basket-add-head__title">В корзине:</span>
+                        </div>
+                      </div>
+
+                      <div class="basket-add__row" data-add="basket">
+                        <div class="basket-add-item basket-add-item_minus" data-minus="basket">
+                          <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                        </div>
+
+                        <div class="basket-add-count" data-sum="basket">1</div>
+
+                        <div class="basket-add-item basket-add-item_plus" data-plus="basket">
+                          <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                        </div>
+                      </div>
+                    </div>
+
+                    <span class="ordering-item-price__old" style="display: none">22 656 грн</span>
+
+                    <span class="ordering-item-price__new">22 356 грн</span>
+                  </div>
+                </div>
+
+                <div class="ordering-item__close">
+                  <img src="img/svg/backgrounds/close.svg" alt="close">
+                </div>
+              </div>
+
+              <div class="basket-small-item">
+                <div class="basket-small-item__row">
+                  <div class="basket-small-item__col">
+                    <div class="ordering-item-img ordering-item-img_bs">
+                      <img src="img/goods/img_3.jpg" alt="img">
+                    </div>
+                  </div>
+
+                  <div class="basket-small-item__col">
+                    <div class="ordering-item-weight ordering-item-weight_bs">
+                      <span class="ordering-item-weight__item">1 кг</span>
+                    </div>
+
+                    <div class="ordering-item-desc ordering-item-desc_bs">
+                      <span class="ordering-item-desc__title">
+                        Brit Care (Брит <br>Кеа) Adult Giant <br>Salmon &amp; Potato для собак гигантских пород (лосось и картофель)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-small-item__row">
+                  <div class="ordering-item-price ordering-item-price_catalog">
+                    <div class="basket-add">
+                      <div class="basket-add__row" style="display: none">
+                        <div class="basket-add-head">
+                          <span class="basket-add-head__title">В корзине:</span>
+                        </div>
+                      </div>
+
+                      <div class="basket-add__row" data-add="basket">
+                        <div class="basket-add-item basket-add-item_minus" data-minus="basket">
+                          <img src="img/svg/backgrounds/minus.svg" alt="minus">
+                        </div>
+
+                        <div class="basket-add-count" data-sum="basket">1</div>
+
+                        <div class="basket-add-item basket-add-item_plus" data-plus="basket">
+                          <img src="img/svg/backgrounds/plus.svg" alt="plus">
+                        </div>
+                      </div>
+                    </div>
+
+                    <span class="ordering-item-price__old" style="display: none">22 656 грн</span>
+
+                    <span class="ordering-item-price__new">356 грн</span>
+                  </div>
+                </div>
+
+                <div class="ordering-item__close">
+                  <img src="img/svg/backgrounds/close.svg" alt="close">
+                </div>
+              </div>
+
+              <div class="properties-info-table properties-info-table_bs">
+                <div class="properties-info-table__item properties-info-table__item_bs">Выгода:</div>
+                <div class="properties-info-table__item properties-info-table__item_bs">352 грн</div>
+                <div class="properties-info-table__item properties-info-table__item_bs">Сумма:</div>
+                <div class="properties-info-table__item properties-info-table__item_bs properties-info-table__item_orange">
+                  21 234 грн
+                </div>
+              </div>
+
+              <div class="basket-small-order">
+                <a href="#" class="basket-small-order__link">Оформить заказ</a>
+              </div>
+            </div>
+
+            <div class="basket-empty" style="display: none;">
+              <div class="basket-empty__svg-box">
+                <svg>
+                  <use href="img/svg/sprite.svg#empty"></use>
+                </svg>
+              </div>
+
+              <span class="basket-empty__title">Корзина пуста</span>
+            </div>
+
+            <div class="accordeon-wrapper">
+              <div class="accordeon-box" data-accordeon="accordeon">
+                <div class="accordeon-box-head" data-head="head">
+                  <h6 class="accordeon-box-head__title">Доставка по Харькову</h6>
+                </div>
+
+                <div class="accordeon-box-content">
+                  <ul class="accordeon-box-list">
+                    <li class="accordeon-box-list__item">- Безналичный расчет на сайте через сервис Portmone</li>
+                    <li class="accordeon-box-list__item">- Безналичный перевод на карту Приват банка</li>
+                    <li class="accordeon-box-list__item">- Наличный при получении по Харькову</li>
+                    <li class="accordeon-box-list__item">- Наложенный платежем со второй покупки (для
+                      зарегистрированных)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="accordeon-box" data-accordeon="accordeon">
+                <div class="accordeon-box-head" data-head="head">
+                  <h6 class="accordeon-box-head__title">Доставка по Украине</h6>
+                </div>
+
+                <div class="accordeon-box-content">
+                  <ul class="accordeon-box-list">
+                    <li class="accordeon-box-list__item">- Безналичный расчет на сайте через сервис Portmone</li>
+                    <li class="accordeon-box-list__item">- Безналичный перевод на карту Приват банка</li>
+                    <li class="accordeon-box-list__item">- Наличный при получении по Харькову</li>
+                    <li class="accordeon-box-list__item">- Наложенный платежем со второй покупки (для
+                      зарегистрированных)
+                    </li>
+                  </ul>
+                </div>
+
+
+              </div>
+
+              <div class="accordeon-box" data-accordeon="accordeon">
+                <div class="accordeon-box-head" data-head="head">
+                  <h6 class="accordeon-box-head__title">Варианты оплаты</h6>
+                </div>
+
+                <div class="accordeon-box-content">
+                  <ul class="accordeon-box-list">
+                    <li class="accordeon-box-list__item">- Безналичный расчет на сайте через сервис Portmone</li>
+                    <li class="accordeon-box-list__item">- Безналичный перевод на карту Приват банка</li>
+                    <li class="accordeon-box-list__item">- Наличный при получении по Харькову</li>
+                    <li class="accordeon-box-list__item">- Наложенный платежем со второй покупки (для
+                      зарегистрированных)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seo">
+      <div class="container">
+        <div class="seo-wrap" data-info="info">
+          <div class="seo-wrap-content" data-content="content">
+            <h2>Интернет магазин Robin Dog</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
+              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
+              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
+              minima natus officiis perspiciatis quidem sit tempore totam ullam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aut consectetur enim fugiat,
+              impedit
+              ipsam laboriosam nisi nobis odio pariatur, perspiciatis provident quia quod rerum, sed vitae! Corporis
+              culpa,
+              fugit nam natus necessitatibus officiis quis sit vitae. Consectetur consequatur culpa hic in iure libero
+              magni
+              mollitia omnis porro quam qui quos, suscipit velit vitae voluptatem. Aliquam at consequuntur corporis eius
+              quam recusandae similique, sint vel veniam voluptatum? A alias aliquid dolore ducimus eius eligendi
+              explicabo
+              in incidunt ipsa ipsam iusto laudantium magnam molestias mollitia necessitatibus nobis nostrum, nulla odit
+              officiis possimus praesentium quas qui suscipit tenetur veritatis voluptate voluptatem. Adipisci aliquam
+              amet
+              aperiam, assumenda, autem commodi, cupiditate deserunt dolores eius error est et in mollitia neque
+              perferendis
+              perspiciatis possimus rerum sapiente soluta tempora tenetur totam unde vel. Accusantium ad alias aliquid
+              assumenda aut, cupiditate deleniti dignissimos distinctio dolorem dolorum eius fugiat id in maxime minima
+              mollitia nam neque odio officia quae quidem sint tempore temporibus tenetur voluptatem voluptatibus,
+              voluptatum. Aliquam dolorum fuga praesentium rem. Ad aliquid amet cumque debitis eaque fuga possimus quia
+              rem
+              reprehenderit. Ad alias dignissimos esse explicabo hic impedit maiores molestiae nemo neque non optio
+              pariatur
+              quas, ratione rerum voluptatibus. Illo repudiandae soluta vitae! Cum, harum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
+              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
+              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
+              minima natus officiis perspiciatis quidem sit tempore totam ullam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
+              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
+              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
+              minima natus officiis perspiciatis quidem sit tempore totam ullam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad aliquam aperiam consectetur
+              delectus deserunt dolores earum error, et excepturi facere non odit perferendis rerum sapiente unde
+              voluptas. Accusantium adipisci aliquid, assumenda aut commodi culpa delectus deserunt dolores ex in
+              minima natus officiis perspiciatis quidem sit tempore totam ullam.
+            </p>
+          </div>
+          <div class="seo-wrap-btn" data-btn="btn">
+            <span class="seo-wrap-btn__seemore">Показать полностью</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer__col footer__col_third">
+          <a href="#" class="footer__logo">
+            <img src="img/svg/logo-footer.svg" alt="robindog">
+          </a>
+
+          <div class="copy-right">
+            <span class="copy-right__text">&copy; 2018 Robin-dog</span>
+          </div>
+
+          <div class="mobile-link">
+            <a href="#" class="mobile-link__text">Мобильная версия сайта</a>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col_full">
+          <div class="footer-head">
+            <h6 class="footer-head__title">Каталог</h6>
+          </div>
+
+          <div class="footer__nav">
+            <ul class="footer-list js-height">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Сухой корм</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Влажный корм</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Лакомства</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Поводки, ошейники, намордники</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Игрушки для собак</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Средства от паразитов</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Клетки и переноски</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Витамины и пищевые добавки</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Аксессуары для дома, миски</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Уход и гигиена</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Одежда, обусь, украшения</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Заменители молока для щенков</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col_third">
+          <div class="footer-head">
+            <h6 class="footer-head__title">Покупателям</h6>
+          </div>
+
+          <div class="footer__nav">
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Доставка и оплата</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Гарантии</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Блог</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Обратная связь</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">О компании</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col_third">
+          <div class="footer-head">
+            <h6 class="footer-head__title">Контакты</h6>
+          </div>
+
+          <div class="info">
+            <a href="tel:+380631230809" class="info-link">
+              <div class="info-link__svg-box info-link__svg-box_tel">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#tel"></use>
+                </svg>
+              </div>
+              <span class="info-link__text">063 123 08 09</span>
+            </a>
+          </div>
+
+          <div class="callback callback_footer">
+            <button class="open-popup callback__link" data-target="callback-popup">
+              Вам перезвонить?
+            </button>
+            <!--<a href="#callback-popup" class="open-popup callback__link">Вам перезвонить?</a>-->
+          </div>
+
+          <div class="info info_insta">
+            <a href="#" class="info-link">
+              <div class="info-link__svg-box">
+                <svg>
+                  <use xlink:href="img/svg/sprite.svg#insta"></use>
+                </svg>
+              </div>
+
+              <span class="info-link__text info-link__text_insta">@ROBINDOG</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-wrap_m">
+        <div class="callback callback_footer">
+          <button class="open-popup callback__link" data-target="callback-popup">
+            Вам перезвонить?
+          </button>
+          <!--<a href="#callback-popup" class="open-popup callback__link">Вам перезвонить?</a>-->
+        </div>
+
+        <div class="info info_insta">
+          <a href="#" class="info-link">
+            <div class="info-link__svg-box">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#insta"></use>
+              </svg>
+            </div>
+
+            <span class="info-link__text info-link__text_insta">@ROBINDOG</span>
+          </a>
+        </div>
+
+        <div class="copy-right">
+          <span class="copy-right__text">© 2018 Robin-dog</span>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!--filter-->
+
+<div class="m-filter">
+  <form class="m-filter-form">
+    <div class="m-filter-form__head">
+      <div class="m-filter-form-btn">
+        <div class="m-filter-form-btn__icn">
+          <img src="img/svg/filter-back.svg" alt="img">
+        </div>
+        <span class="m-filter-form-btn__head">Назад</span>
+      </div>
+
+      <div class="m-filter-form-head">
+        <span class="m-filter-form-head__title">Фильтры</span>
+      </div>
+
+      <div class="m-filter-form-btn">
+        <span class="m-filter-form-btn__head">Сбросить все</span>
+      </div>
+    </div>
+
+    <div class="m-filter-form__center">
+      <div class="move-box">
+        <div class="move-box__block">
+          <ul class="m-filter-form-list">
+            <li class="m-filter-form-list__item">
+              <a href="#" class="m-filter-form-list__link">Размер породы</a>
+            </li>
+            <li class="m-filter-form-list__item">
+              <a href="#" class="m-filter-form-list__link">Возвраст собаки</a>
+            </li>
+            <li class="m-filter-form-list__item">
+              <a href="#" class="m-filter-form-list__link">Бренды</a>
+            </li>
+            <li class="m-filter-form-list__item">
+              <a href="#" class="m-filter-form-list__link">Назначение</a>
+              <span class="m-filter-form-list__select">Гипоалергенный, Лечебный</span>
+              <span class="m-filter-form-list__reset">Сбросить</span>
+            </li>
+            <li class="m-filter-form-list__item">
+              <a href="#" class="m-filter-form-list__link">Состав</a>
+            </li>
+            <li class="m-filter-form-list__item">
+              <a href="#" class="m-filter-form-list__link">Цена</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="move-box__block">
+          <ul class="m-filter-form-list">
+            <li class="m-filter-form-list__item">
+              <div class="catalog-form-box">
+                <input type="checkbox" id="brend-1" class="catalog-form-box__field">
+                <label for="brend-1" class="catalog-form-box__label catalog-form-box__label_m">Очень маленькие</label>
+              </div>
+            </li>
+            <li class="m-filter-form-list__item">
+              <div class="catalog-form-box">
+                <input type="checkbox" id="brend-2" class="catalog-form-box__field">
+                <label for="brend-2" class="catalog-form-box__label catalog-form-box__label_m">Маленькие</label>
+              </div>
+            </li>
+            <li class="m-filter-form-list__item">
+              <div class="catalog-form-box">
+                <input type="checkbox" id="brend-3" class="catalog-form-box__field">
+                <label for="brend-3" class="catalog-form-box__label catalog-form-box__label_m">Средние</label>
+              </div>
+            </li>
+            <li class="m-filter-form-list__item">
+              <div class="catalog-form-box">
+                <input type="checkbox" id="brend-4" class="catalog-form-box__field">
+                <label for="brend-4" class="catalog-form-box__label catalog-form-box__label_m">Большие,
+                  гигантские</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="move-box__block">
+          <div class="accordeon-box-content accordeon-box-content_m">
+            <div class="catalog-form-box catalog-form-box_row catalog-form-box_row-m">
+              <input type="tel" class="from catalog-form-box__price catalog-form-box__price_m">
+              <span class="line"></span>
+              <input type="tel" class="to catalog-form-box__price catalog-form-box__price_m">
+            </div>
+
+            <div class="catalog-form-box catalog-form-box_range">
+              <div class="range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
+                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
+                      style="left: 0%;"></span><span tabindex="0"
+                                                     class="ui-slider-handle ui-corner-all ui-state-default"
+                                                     style="left: 100%;"></span></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-filter-form__bottom">
+      <button class="filter-btn" type="submit">Применить</button>
+    </div>
+  </form>
+</div>
+
+<!--mobile-menu-->
+<div class="m-wrapper"></div>
+
+<div class="m-menu">
+  <div class="m-menu-close">
+    <img src="img/svg/close-menu.svg" alt="close">
+  </div>
+
+  <div class="m-menu__wrap">
+    <ul class="m-menu-list">
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Личный кабинет</a>
+      </li>
+    </ul>
+
+    <div class="m-menu-head">
+      <h6 class="m-menu-head__title">Каталог по размерам пород:</h6>
+    </div>
+
+    <ul class="m-menu-list">
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Очень маленькие породы</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Маленькие породы</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Средние породы</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Большие, гигантские породы</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Общий каталог</a>
+      </li>
+    </ul>
+
+    <div class="m-menu-head">
+      <h6 class="m-menu-head__title">Покупателям</h6>
+    </div>
+
+    <ul class="m-menu-list">
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Доставка</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Оплата</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Гарантии</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">Обратная связь</a>
+      </li>
+      <li class="m-menu-list-item">
+        <a href="#" class="m-menu-list-link">О компании</a>
+      </li>
+    </ul>
+
+    <div class="m-menu-info">
+      <div class="info info_header">
+        <a href="tel:+380631230809" class="info-link">
+          <div class="info-link__svg-box info-link__svg-box_header">
+            <svg>
+              <use xlink:href="img/svg/sprite.svg#tel"></use>
+            </svg>
+          </div>
+
+          <span class="info-link__text info-link__text_header">0 800 303-344</span>
+        </a>
+        <span class="info__desc">(Бесплатно для Украины)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--popups-->
+
+<div class="popup-bg close"></div>
+
+<div id="authorization" class="popup-window popup-window_author">
+  <div class="popup-head">
+    <h6 class="popup-head__title">Требуется авторизация</h6>
+  </div>
+
+  <div class="popup-content">
+    <div class="popup-form-social">
+      <a href="#" class="popup-content__link">Регистрация</a>
+      <a href="#" class="popup-content__link">Вход</a>
+    </div>
+  </div>
+
+  <div class="popup-close close">
+    <svg class="popup-close__icon">
+      <use xlink:href="img/svg/sprite.svg#close"></use>
+    </svg>
+  </div>
+
+</div>
+
+<div id="reg" class="popup-window">
+  <div class="popup-head">
+    <h6 class="popup-head__title">Регистрация</h6>
+  </div>
+
+  <div class="popup-content">
+    <form class="popup-form">
+      <div class="popup-form__box">
+        <input type="text" id="name" class="popup-form__field" required>
+        <label class="popup-form__label" for="name">Имя</label>
+      </div>
+
+      <div class="popup-form__box">
+        <input type="text" id="email" class="popup-form__field" required>
+        <label class="popup-form__label" for="email">E-mail</label>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc">Пароль мы вышлем на e-mail</span>
+
+        <button type="submit" class="popup-form__submit">Зарегистрироваться</button>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc">или</span>
+
+        <div class="popup-form-social">
+          <a href="#" class="popup-form-social-link popup-form-social-link_g">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="30" height="30">
+                <use xlink:href="img/svg/sprite.svg#google"></use>
+              </svg>
+            </div>
+            <span class="popup-form-social-link__text">Google</span>
+          </a>
+
+          <a href="#" class="popup-form-social-link popup-form-social-link_fb">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="40" height="40">
+                <use xlink:href="img/svg/sprite.svg#fb"></use>
+              </svg>
+            </div>
+            <span class="popup-form-social-link__text">Facebook</span>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup-close close">
+    <svg class="popup-close__icon">
+      <use xlink:href="img/svg/sprite.svg#close"></use>
+    </svg>
+  </div>
+
+</div>
+
+<div id="enter" class="popup-window">
+  <div class="popup-head">
+    <h6 class="popup-head__title">Вход</h6>
+  </div>
+
+  <div class="popup-content">
+    <form class="popup-form">
+      <div class="popup-form__box">
+        <input type="text" id="name3" class="popup-form__field error" required>
+        <label class="popup-form__label error" for="name3">Имя</label>
+      </div>
+
+      <div class="popup-form__box">
+        <input type="text" id="password" class="popup-form__field error" required>
+        <label class="popup-form__label error" for="password">Пароль</label>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc popup-form__desc_link">Выслать пароль на e-mail</span>
+
+        <button type="submit" class="popup-form__submit">Вход</button>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc">или</span>
+
+        <div class="popup-form-social">
+          <a href="#" class="popup-form-social-link popup-form-social-link_g">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="30" height="30">
+                <use xlink:href="img/svg/sprite.svg#google"></use>
+              </svg>
+            </div>
+            <span class="popup-form-social-link__text">Google</span>
+          </a>
+
+          <a href="#" class="popup-form-social-link popup-form-social-link_fb">
+            <div class="popup-form-social-link__box">
+              <svg class="" width="40" height="40">
+                <use xlink:href="img/svg/sprite.svg#fb"></use>
+              </svg>
+            </div>
+            <span class="popup-form-social-link__text">Facebook</span>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup-close close">
+    <svg class="popup-close__icon">
+      <use xlink:href="img/svg/sprite.svg#close"></use>
+    </svg>
+  </div>
+
+</div>
+
+<div id="callback-popup" class="popup-window">
+  <div class="popup-head">
+    <h6 class="popup-head__title">Вам перезвонить?</h6>
+  </div>
+
+  <div class="popup-content">
+    <form class="popup-form">
+      <div class="popup-form__box">
+        <input type="text" id="name2" class="popup-form__field" required>
+        <label class="popup-form__label" for="name2">Имя</label>
+      </div>
+
+      <div class="popup-form__box">
+        <input type="tel" id="tel" class="popup-form__field" required>
+        <label class="popup-form__label" for="tel">Телефон</label>
+      </div>
+
+      <div class="popup-form__box">
+        <span class="popup-form__desc">График работы call-центра:</span>
+        <span class="popup-form__desc">пн-пт, 10:00 - 20:00</span>
+
+        <button type="submit" class="popup-form__submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="popup-close close">
+    <svg class="popup-close__icon">
+      <use xlink:href="img/svg/sprite.svg#close"></use>
+    </svg>
+  </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="libs/touch/touch.js"></script>
+<script src="libs/swiper/swiper.min.js"></script>
+<!--<script src="libs/range/range.js"></script>-->
+<script src="libs/maska/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/range.js"></script>
+<script src="js/card.js"></script>
+<script src="js/m-filter.js"></script>
+</body>
+</html>
